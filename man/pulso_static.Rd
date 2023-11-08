@@ -2,24 +2,25 @@
 % Please edit documentation in R/03_pulso_static.R
 \name{pulso_static}
 \alias{pulso_static}
-\title{Static Analysis of Pulso Social}
+\title{Pulso Social Colombia - Gráfico de tendencias}
 \usage{
 pulso_static(id, type_p, year)
 }
 \arguments{
-\item{id}{Unique identifier of the variable.}
+\item{id}{Identificación de la variable de Pulso Social Colombia}
 
-\item{type_p}{Type of graph (optional, default is "").}
+\item{type_p (opcional)}{Provee la opción de agregar las etiquetas y variables usando la opción "print". Este parámetro está predeterminado para estar vacio, lo cual implica que no se imprime las etiquetas.}
 
-\item{year}{Year for which to generate the analysis (optional, default is the most complete year of data).}
+\item{year (opcional)}{Año que se desea realizar el gráfico Year for which to generate the analysis. El caso de no proveerse se produce el gráfico con los últimos datos disponibles.}
 }
 \value{
-A ggplot object that displays the static graph of the "id" variable at a certain time.
+Objeto ggplot que muestra el gráfico estático de la variable "id" con datos de Pulso Social - Colombia. 
 }
 \description{
-This function generates a static circular bar chart for a specific variable in the data of Pulso So.
+    Esta función crear un gráfico de circular con los variables existentes en la infraestructura de pulso social. 
 }
 \examples{
-pulso_static(id="286",type="print")
-pulso_static(id="290",type="",2020)
+pulso_static(id="286",type="print") # En este caso se imprime el último dato disponoible
+pulso_static(id="290",type="",2020) # Se especifica el año que se quiere graficar
+pulso_static(290)
 }

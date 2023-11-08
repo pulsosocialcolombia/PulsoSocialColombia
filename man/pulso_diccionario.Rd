@@ -2,15 +2,30 @@
 % Please edit documentation in R/01_pulso_dic.R
 \name{pulso_diccionario}
 \alias{pulso_diccionario}
-\title{Dictionary of Pulso Social Colombia}
+\title{Diccionario Pulso Social Colombia}
 \usage{
 pulso_diccionario()
 }
-\value{
-Updates the dictionary for Pulso Social Colombia
-}
 \description{
-Dictionary of Pulso Social Colombia
+Devuelve la base de datos total de las variables disponibles dentro de la infraestructura de Pulso Social. 
+}
+
+\details{
+
+\bold{Tipo:} {Tipo de Indicador (contexto o resultados)	}				
+\bold{dimension:} {Dimensión}					
+\bold{subdimension:} {Sub-Dimensión}					
+\bold{var_id:} {Valor único de identificacación de la variable}					
+\bold{variable:} {Nombre de la variable}				
+\bold{id_time:} {Identificación de la periocidad (1 Año - 2 Mes)}					
+\bold{id_nivel:} {Identificación de los niveles de desagregación}					
+\bold{var_etiqueta:} {Etiqueta de las variables}					
+\bold{var_periodos:} {Etiqueta de las variables}					
+\bold{fig_trend:} { Es posible hacer un gráfico de tendencias (si=1)}					
+\bold{max_year:} {Año mínimo disponible}					
+\bold{min_year:} {Año máximo disponible}					
+\bold{fig_map:} {Es posible hacer un mapa de departamentos (si=1)}					
+
 }
 \examples{
 pulso_diccionario()

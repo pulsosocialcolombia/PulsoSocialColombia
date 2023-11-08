@@ -1,47 +1,16 @@
-#--------------------------#
-# C. fun_graph ----
-# Creates graphs according to the indicated style
-#--------------------------#
+# File: 03_pulso_static.R
+# Created: Nov 2021 
+#         - Mónica Hernandez (mhernande6@eafit.edu.co)
+#         - Ana M Pirela
+#         - Juan Carlos Muñoz-Mora (jmunozm1@eafit.edu.co)
+# Last Updated: Nov 2023
+#               - German Tabares (gangulo1@eafit.edu.co)
+#               - Juan Carlos Muñoz (jmunozm1@eafit.edu.co)
+#               - Santiago Navas (snavasg@eafit.edu.co)
+#               - Laura Quintero (lmquinterv@eafit.edu.co)
+# Summary: This function generates a static circular bar chart for a specific variable in the data of Pulso So.
 
-# load("data/ds_pulso.rda")
-# load("data/cod_vars.rda")
-# load("data/cod_bases.rda")
-# load("data/nom_dpto.rda")
-# load("data/deflactor.rda")
 
-# ethnicity <- ds_pulso %>% dplyr::filter(stringr::str_detect(id_nivel, "etnia"))
-# table(ethnicity$variable)
-# table(ethnicity$var_id)
-# labor <- ethnicity %>% dplyr::filter(id_data == 1) %>% dplyr::distinct(var_id, .keep_all = T)
-# vars <- unique(labor$var_id)
-# id <- 220
-# type_p <- "print"
-# pulso_static(id = id, type_p = type_p)
-# path <- "C:/Users/anapi/Desktop"
-# w <- 7*1.5
-# h <- 4*1.5
-# dpi <- 300
-# ggsave(glue::glue("{path}/test.png"), dpi = dpi, width = w, height = h)
-
-# bar_colors1 <- c("#3d5574", "#74ac54", "#b8544c", "#c0ac84", "#c8dccc", "#b0c4e4", "#d4742c")
-# countries_colors1 <- c("#759cd4", "#c43424", "#ecbc24", "#385676", "#d4742d","#6dad55", "#a4a4a4", "#643d94")
-# bar_colors2 <- c("#4c9ccc", "#e4546c", "#fcac24", "#0c0c0c", "#b4b4b4")
-# col_palette <-  countries_colors1
-
-#' Static Analysis of Pulso Social
-#'
-#'This function generates a static circular bar chart for a specific variable in the data of Pulso So.
-#'
-#' @param id Unique identifier of the variable.
-#' @param type_p Type of graph (optional, default is "").
-#' @param year Year for which to generate the analysis (optional, default is the most complete year of data).
-#'
-#' @return A ggplot object that displays the static graph of the "id" variable at a certain time.
-#'
-#' @examples
-#' pulso_static(id="286",type="print")
-#' pulso_static(id="290",type="",2020)
-#' @export
 pulso_static <- function(id,type_p,year){
 
   #### Library

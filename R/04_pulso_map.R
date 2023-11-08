@@ -1,36 +1,15 @@
-#--------------------------#
-# pulso_map: creates maps for the first and last available year in the data
-#--------------------------#
+# File: 04_pulso_map.R
+# Created: Nov 2021 
+#         - Mónica Hernandez (mhernande6@eafit.edu.co)
+#         - Ana M Pirela
+#         - Juan Carlos Muñoz-Mora (jmunozm1@eafit.edu.co)
+# Last Updated: Nov 2023
+#               - German Tabares (gangulo1@eafit.edu.co)
+#               - Juan Carlos Muñoz (jmunozm1@eafit.edu.co)
+#               - Santiago Navas (snavasg@eafit.edu.co)
+#               - Laura Quintero (lmquinterv@eafit.edu.co)
+# Summary: This function generates a comparative map graph between the maximum and minimum years for a specific variable in the data of Pulso Social.
 
-# load("data/ds_pulso.rda")
-# load("data/cod_vars.rda")
-# load("data/cod_bases.rda")
-# load("data/nom_dpto.rda")
-# load("data/map_dptos.rda")
-# load("data/deflator.rda")
-# id <- "275"
-# type_p <- "print"
-# pulso_map(id = id, type_p = "print")
-# path <- "C:/Users/anapi/Desktop"
-# w <- 7*1.5
-# h <- 4*1.5
-# dpi <- 300
-# ggsave(glue("{path}/test.png"), dpi = dpi, width = w, height = h)
-
-#' Comparative Map Analysis for Pulso Social
-#'
-#' This function generates a comparative map graph between the maximum and minimum years for a specific variable in the data of Pulso Social.
-#'
-#' @param id Unique identifier of the variable.
-#' @param type_p Type of graph (optional, default is "").
-#' @param col_palette Custom color palette (optional).
-#'
-#' @return A ggplot object that displays the map graph comparing the maximum and minimum years of the "id" variable.
-#'
-#' @examples
-#' pulso_map(id="286", type_p="print")
-#' pulso_map(id="300", type_p="print", col_palette=c("#7052ff", "#d06aff", "#72A3AF", "#ff81ff", "#5B6477", "#ff81ff"))
-#' @export
 
 pulso_map <- function(id, type_p, col_palette){
 

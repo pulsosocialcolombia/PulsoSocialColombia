@@ -1,6 +1,13 @@
 # File: 01_pulso_dic.R
-# Author: Juan Carlos Muñoz
-# Date: 2021
+# Created: Nov 2021 
+#         - Mónica Hernandez (mhernande6@eafit.edu.co)
+#         - Ana M Pirela
+#         - Juan Carlos Muñoz-Mora (jmunozm1@eafit.edu.co)
+# Last Updated: Nov 2023
+#               - German Tabares (gangulo1@eafit.edu.co)
+#               - Juan Carlos Muñoz (jmunozm1@eafit.edu.co)
+#               - Santiago Navas (snavasg@eafit.edu.co)
+#               - Laura Quintero (lmquinterv@eafit.edu.co)
 # Summary: This script prepares a dictionary of variables for analysis.
 
 ## Load data
@@ -19,13 +26,13 @@ load("data/cod_vars.rda")
 pulso_diccionario <- function(){
 
   # Load the necessary libraries
-  library(googlesheets4, quietly = TRUE)
-  library(tidyverse, quietly = TRUE)
-  library(stringi, quietly = TRUE)
-  library(dplyr, quietly = TRUE)
-
+  # library(googlesheets4, quietly = TRUE) -- No needed because it was save on local
+  require (tidyverse, quietly = TRUE)
+  require (stringi, quietly = TRUE)
+  require(dplyr, quietly = TRUE)
+  
   # Define the Google Sheets URL
-  dic_map <-"https://docs.google.com/spreadsheets/d/1ZEqO-bYWPYixr2xI6fNeW4MCEeyZYqFoIRUKllhbeU8/edit?usp=sharing"
+  #dic_map <-"https://docs.google.com/spreadsheets/d/1ZEqO-bYWPYixr2xI6fNeW4MCEeyZYqFoIRUKllhbeU8/edit?usp=sharing"
 
   # Select certain columns from the 'cod_vars' dataframe and assign them to 'dic'
   dic <- cod_vars %>% dplyr::select(Tipo, dimension, subdimension, var_id, variable, var_etiqueta, var_periodos, var_poblacional,
@@ -35,8 +42,9 @@ pulso_diccionario <- function(){
   pob_levels <- c("étnia", "etnia", "género", "minorías", "Género", "étnico")
 
   # Create conditional columns for the scatterplots in 'dic'
-  dic <- dic %>% dplyr::mutate(fig_scatter = ifelse(stringr::str_detect(var_poblacional, paste(pob_levels, collapse = "|")), 1, 0),
-                               fig_scatter_time = ifelse(max_year != min_year, 1, 0))
+  dic <- dic %>% dplyr::mutate(fig_scatter = 
+        ifelse(stringr::str_detect(var_poblacional, paste(pob_levels, collapse = "|")), 1, 0),
+               fig_scatter_time = ifelse(max_year != min_year, 1, 0))
 
   # Fill the NAs in the 'fig_scatter' and 'fig_scatter_time' columns with 0.
   dic$fig_scatter[is.na(dic$fig_scatter)] <- 0
@@ -65,9 +73,13 @@ pulso_diccionario <- function(){
   # Get the current date and time and format it as a string
   dt <- format(Sys.time(), "%Y%b%d")
 
+  ### Return
+  return(dic)
+
+  #### ---- This section was deleted because we create a webpage on this
   # Try to delete a sheet in the Google Sheets spreadsheet
-  try(googlesheets4::sheet_delete(dic_map, paste0("Vars_",dt)))
+  #try(googlesheets4::sheet_delete(dic_map, paste0("Vars_",dt)))
 
   # Write 'dic' to the Google Sheets spreadsheet
-  googlesheets4::sheet_write(dic, ss = dic_map, sheet = paste0("Vars_",dt))
+  #googlesheets4::sheet_write(dic, ss = dic_map, sheet = paste0("Vars_",dt))
 }

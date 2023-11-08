@@ -1,36 +1,14 @@
-#--------------------------#
-# pulso_scatter: creates scatter plots by levels (one level, one year) to compare populations
-#--------------------------#
-
-# load("data/ds_pulso.rda")
-# load("data/cod_vars.rda")
-# load("data/map_dptos.rda")
-# load("data/deflator.rda")
-# load("data/nom_dpto.rda")
-# id <- 14
-# type_p <- "print"
-# pulso_scatter(id = id, type_p = "print")
-# path <- "C:/Users/anapi/Desktop"
-# w <- 7*1.5
-# h <- 4*1.5
-# dpi <- 300
-# ggsave(glue("{path}/test.png"), dpi = dpi, width = w, height = h)
-
-#' Scatter Analysis of Pulso Social
-#'
-#' This function generates a scatter plot that displays the relationship between two categories of a specific variable in the data of Pulso social for a specific year.
-#'
-#' @param id Unique identifier of the variable.
-#' @param type_p Type of graph (optional, default is "").
-#' @param year Year for which you want to generate the graph (optional, by default, the last available year is selected).
-#' @param col_palette Custom color palette (optional).
-#'
-#' @return A ggplot object that shows the scatter plot of the "id" variable.
-#'
-#' @examples
-#' pulso_scatter(id="46", type="print")
-#' pulso_scatter(id="46", type="print", col_palette=c("#7052ff", "#d06aff", "#72A3AF", "#ff81ff", "#5B6477", "#ff81ff", "#60ff73", "#ccff60"))
-#' @export
+# File: 06_pulso_scatter.R
+# Created: Nov 2021 
+#         - Mónica Hernandez (mhernande6@eafit.edu.co)
+#         - Ana M Pirela
+#         - Juan Carlos Muñoz-Mora (jmunozm1@eafit.edu.co)
+# Last Updated: Nov 2023
+#               - German Tabares (gangulo1@eafit.edu.co)
+#               - Juan Carlos Muñoz (jmunozm1@eafit.edu.co)
+#               - Santiago Navas (snavasg@eafit.edu.co)
+#               - Laura Quintero (lmquinterv@eafit.edu.co)
+# Summary: creates scatter plots by levels (one level, one year) to compare populations
 
 # Define the function 'pulso_scatter'
 pulso_scatter <- function(id, type_p, year, col_palette){

@@ -2,23 +2,23 @@
 % Please edit documentation in R/02_pulso_trend.R
 \name{pulso_trend}
 \alias{pulso_trend}
-\title{Function for Pulso Social Trend Analysis}
+\title{Pulso Social Colombia - Gráfico de tendencias}
 \usage{
 pulso_trend(id, type_p)
 }
 \arguments{
-\item{id}{Unique identifier of the variable.}
+\item{id}{Identificación de la variable de Pulso Social Colombia}
 
-\item{type_p}{Type of plot: "print" includes titles and notes about the data. Default is an empty string, which displays the plot without titles or notes.}
+\item{type_p (opcional)}{Provee la opción de agregar las etiquetas y variables usando la opción "print". Este parámetro está predeterminado para estar vacio, lo cual implica que no se imprime las etiquetas.}
 }
 \value{
-A ggplot object that displays the trend graph of the "id" variable with data from Pulso Social - Colombia.
+Objeto ggplot que muestra el gráfico de tendencia de la variable "id" con datos de Pulso Social - Colombia. 
 }
 \description{
-Function for Pulso Social Trend Analysis
+Esta función crear un gráfico de tendencias con los variables existentes en la infraestructura de pulso social. En el caso que la variable no tenga información temporal un mensaje de advertencia 
 }
 \examples{
-pulso_trend(id="297",type="print")
-pulso_trend(id="290",type="")
-pulso_trend(106)
+pulso_trend(id="297",type="print") # imprimen todo los títulos de la imagen
+pulso_trend(id="290",type="") # imprime la gráfica sin títulos o etiquetes, esta es la función predeterminada
+pulso_trend(106) # imprime la gráfica sin títulos o etiquetes
 }

@@ -3,12 +3,14 @@
 \title{Pulso Social Project Main Data
 }
 \description{
-This dataset collects information from different sources, previously preprocessed, updated and standardized. It becomes the main source of information for the Pulso Social project, and contains all the necessary information for further analysis.
+Esta base de datos representa la infrasturecoge información procedente de distintas fuentes, previamente preprocesada, actualizada y normalizada. Se convierte en la principal fuente de información del proyecto Pulso Social, y contiene toda la información necesaria para su posterior análisis.
 }
 \usage{
 ds_pulso
 }
 \details{
+
+La base de datos contiene la siguientes columnas:
 
  \bold{id_data}: This is the unique identifier for each data point in the dataset.
 

@@ -7,24 +7,25 @@
 pulso_scatter_time(id, type_p, year_min, year_max, col_palette)
 }
 \arguments{
-\item{id}{Unique identifier of the variable.}
+\item{id}{Identificación de la variable de Pulso Social Colombia}
 
-\item{type_p}{Type of plot (optional, default is "").}
+\item{type_p (opcional)}{Provee la opción de agregar las etiquetas y variables usando la opción "print". Este parámetro está predeterminado para estar vacio, lo cual implica que no se imprime las etiquetas.}
 
-\item{year_min}{Minimum year for the year range of the plot, defaults to the minimum year in the data.}
+\item{year_min}{Año mínimo para el intervalo de años del gráfico, por defecto se pone el primer año disponible.}
 
-\item{year_max}{Maximum year for the year range of the plot, defaults to the maximum year in the data.}
+\item{year_max}{Año máximo para el intervalo de años del gráfico, por defecto se pone el útimo año disponible.}
 
-\item{col_palette}{Custom color palette (optional).}
+\item{col_palette (optional)}{Permite la definición pre-determinada de los colores que se utilizarán para el mapa. El insumo debe definir \bold{5} colores. }
 }
 \value{
-A ggplot object that displays the scatter plot between two years of the variable "id."
+    Objeto ggplot que muestra el gráfico la comparación de la representación geográfica de un "id" con datos de Pulso Social - Colombia. 
 }
 \description{
-This function generates a scatter plot that displays the relationship between two years of a specific variable "id" in the Pulso Social data.
+    Esta función genera un gráfico de dispersión  por niveles (un nivel, un anio) entre dos años de una variable específica "id" en los datos de Pulso Social.
 }
 \examples{
-pulso_scatter_time(id="300",type="print")
-pulso_scatter_time(id="300",type="print",2010,2020)
-pulso_scatter_time(id="300",type="print",2010,2020,c("#7052ff", "#d06aff", "#72A3AF", "#ff81ff", "#5B6477", "#ff81ff", "#60ff73", "#ccff60"))
+pulso_scatter_time(id="300",type="print") #Impresión con notas y etiquetas
+pulso_scatter_time(id="300",type="print",2010,2020) #Impresión con notas y etiquetas, espeficando los años
+pulso_scatter_time(id="300",type="print",2010,2020,c("#7052ff", "#d06aff", "#72A3AF", "#ff81ff", "#5B6477", "#ff81ff", "#60ff73", "#ccff60"))  # Personalizando los colores del gráfico
+pulso_scatter_time(300) # Gráfico sin notas
 }

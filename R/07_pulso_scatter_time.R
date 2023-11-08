@@ -1,39 +1,17 @@
-#--------------------------#
-# pulso_scatter: crea graficos de dispersion por niveles (un nivel, un anio) para
+# File: 06_pulso_scatter.R
+# Created: Nov 2021 
+#         - Mónica Hernandez (mhernande6@eafit.edu.co)
+#         - Ana M Pirela
+#         - Juan Carlos Muñoz-Mora (jmunozm1@eafit.edu.co)
+# Last Updated: Nov 2023
+#               - German Tabares (gangulo1@eafit.edu.co)
+#               - Juan Carlos Muñoz (jmunozm1@eafit.edu.co)
+#               - Santiago Navas (snavasg@eafit.edu.co)
+#               - Laura Quintero (lmquinterv@eafit.edu.co)
+# Summary: crea graficos de dispersion por niveles (un nivel, un anio) para
 # comparar poblaciones
-#--------------------------#
 
-# load("data/ds_pulso.rda")
-# load("data/cod_vars.rda")
-# load("data/cod_bases.rda")
-# load("data/nom_dpto.rda")
-# load("data/deflactor.rda")
-# id <- "265"
-# type_p <- "print"
-# pulso_scatter_time(id = id, type_p = "print")
-# path <- "C:/Users/anapi/Desktop"
-# w <- 7*1.5
-# h <- 4*1.5
-# dpi <- 300
-# ggsave(glue("{path}/test.png"), dpi = dpi, width = w, height = h)
 
-#' Time Series Scatter Analysis for Pulso Social
-#'
-#' This function generates a scatter plot that displays the relationship between two years of a specific variable "id" in the Pulso Social data.
-#'
-#' @param id Unique identifier of the variable.
-#' @param type_p Type of plot (optional, default is "").
-#' @param year_min Minimum year for the year range of the plot, defaults to the minimum year in the data.
-#' @param year_max Maximum year for the year range of the plot, defaults to the maximum year in the data.
-#' @param col_palette Custom color palette (optional).
-#'
-#' @return A ggplot object that displays the scatter plot between two years of the variable "id."
-#'
-#' @examples
-#' pulso_scatter_time(id="300",type="print")
-#' pulso_scatter_time(id="300",type="print",2010,2020)
-#' pulso_scatter_time(id="300",type="print",2010,2020,c("#7052ff", "#d06aff", "#72A3AF", "#ff81ff", "#5B6477", "#ff81ff", "#60ff73", "#ccff60"))
-#' @export
 pulso_scatter_time <- function(id, type_p, year_min, year_max, col_palette){
 
   # Load necessary packages

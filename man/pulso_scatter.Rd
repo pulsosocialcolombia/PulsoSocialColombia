@@ -2,26 +2,29 @@
 % Please edit documentation in R/06_pulso_scatter.R
 \name{pulso_scatter}
 \alias{pulso_scatter}
-\title{Scatter Analysis of Pulso Social}
+\title{Análisis de dispersión por niveles}
 \usage{
 pulso_scatter(id, type_p, year, col_palette)
 }
 \arguments{
-\item{id}{Unique identifier of the variable.}
 
-\item{type_p}{Type of graph (optional, default is "").}
+\item{id}{Identificación de la variable de Pulso Social Colombia}
 
-\item{year}{Year for which you want to generate the graph (optional, by default, the last available year is selected).}
+\item{type_p (opcional)}{Provee la opción de agregar las etiquetas y variables usando la opción "print". Este parámetro está predeterminado para estar vacio, lo cual implica que no se imprime las etiquetas.}
 
-\item{col_palette}{Custom color palette (optional).}
+\item{year (opcional)}{Año que se desea realizar el gráfico Year for which to generate the analysis. El caso de no proveerse se produce el gráfico con los últimos datos disponibles.}
+
+\item{col_palette (optional)}{Permite la definición pre-determinada de los colores que se utilizarán para el mapa. El insumo debe definir \bold{5} colores. }
+
 }
 \value{
-A ggplot object that shows the scatter plot of the "id" variable.
+    Objeto ggplot que muestra el gráfico de dispersión de un "id" con datos de Pulso Social - Colombia. 
 }
 \description{
-This function generates a scatter plot that displays the relationship between two categories of a specific variable in the data of Pulso social for a specific year.
+    Esta función genera un gráfico de dispersión por niveles gráfico de dispersión que muestra la relación entre dos categorías de una variable específica en los datos de Pulso social para un año concreto.
 }
 \examples{
-pulso_scatter(id="46", type="print")
-pulso_scatter(id="46", type="print", col_palette=c("#7052ff", "#d06aff", "#72A3AF", "#ff81ff", "#5B6477", "#ff81ff", "#60ff73", "#ccff60"))
+pulso_scatter(id="46", type="print") # Imprime las etiquetas y notas
+pulso_scatter(id="46", type="print", col_palette=c("#7052ff", "#d06aff", "#72A3AF", "#ff81ff", "#5B6477", "#ff81ff", "#60ff73", "#ccff60")) # Imprime las etiquetas y notas
+pulso_scatter(46)
 }
