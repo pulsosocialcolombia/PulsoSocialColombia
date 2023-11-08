@@ -1,0 +1,1123 @@
+cod_dpto,nom_dpto,cod_mpio,nom_mpio
+5,Antioquia,5001,Medellín
+5,Antioquia,5002,Abejorral
+5,Antioquia,5004,Abriaquí
+5,Antioquia,5021,Alejandría
+5,Antioquia,5030,Amagá
+5,Antioquia,5031,Amalfi
+5,Antioquia,5034,Andes
+5,Antioquia,5036,Angelópolis
+5,Antioquia,5038,Angostura
+5,Antioquia,5040,Anorí
+5,Antioquia,5042,Santafé de Antioquia
+5,Antioquia,5044,Anzá
+5,Antioquia,5045,Apartadó
+5,Antioquia,5051,Arboletes
+5,Antioquia,5055,Argelia
+5,Antioquia,5059,Armenia
+5,Antioquia,5079,Barbosa
+5,Antioquia,5086,Belmira
+5,Antioquia,5088,Bello
+5,Antioquia,5091,Betania
+5,Antioquia,5093,Betulia
+5,Antioquia,5101,Ciudad Bolívar
+5,Antioquia,5107,Briceño
+5,Antioquia,5113,Buriticá
+5,Antioquia,5120,Cáceres
+5,Antioquia,5125,Caicedo
+5,Antioquia,5129,Caldas
+5,Antioquia,5134,Campamento
+5,Antioquia,5138,Cañasgordas
+5,Antioquia,5142,Caracolí
+5,Antioquia,5145,Caramanta
+5,Antioquia,5147,Carepa
+5,Antioquia,5148,El Carmen de Viboral
+5,Antioquia,5150,Carolina
+5,Antioquia,5154,Caucasia
+5,Antioquia,5172,Chigorodó
+5,Antioquia,5190,Cisneros
+5,Antioquia,5197,Cocorná
+5,Antioquia,5206,Concepción
+5,Antioquia,5209,Concordia
+5,Antioquia,5212,Copacabana
+5,Antioquia,5234,Dabeiba
+5,Antioquia,5237,Donmatías
+5,Antioquia,5240,Ebéjico
+5,Antioquia,5250,El Bagre
+5,Antioquia,5264,Entrerríos
+5,Antioquia,5266,Envigado
+5,Antioquia,5282,Fredonia
+5,Antioquia,5284,Frontino
+5,Antioquia,5306,Giraldo
+5,Antioquia,5308,Girardota
+5,Antioquia,5310,Gómez Plata
+5,Antioquia,5313,Granada
+5,Antioquia,5315,Guadalupe
+5,Antioquia,5318,Guarne
+5,Antioquia,5321,Guatapé
+5,Antioquia,5347,Heliconia
+5,Antioquia,5353,Hispania
+5,Antioquia,5360,Itagüí
+5,Antioquia,5361,Ituango
+5,Antioquia,5364,Jardín
+5,Antioquia,5368,Jericó
+5,Antioquia,5376,La Ceja
+5,Antioquia,5380,La Estrella
+5,Antioquia,5390,La Pintada
+5,Antioquia,5400,La Unión
+5,Antioquia,5411,Liborina
+5,Antioquia,5425,Maceo
+5,Antioquia,5440,Marinilla
+5,Antioquia,5467,Montebello
+5,Antioquia,5475,Murindó
+5,Antioquia,5480,Mutatá
+5,Antioquia,5483,Nariño
+5,Antioquia,5490,Necoclí
+5,Antioquia,5495,Nechí
+5,Antioquia,5501,Olaya
+5,Antioquia,5541,Peñol
+5,Antioquia,5543,Peque
+5,Antioquia,5576,Pueblorrico
+5,Antioquia,5579,Puerto Berrío
+5,Antioquia,5585,Puerto Nare
+5,Antioquia,5591,Puerto Triunfo
+5,Antioquia,5604,Remedios
+5,Antioquia,5607,Retiro
+5,Antioquia,5615,Rionegro
+5,Antioquia,5628,Sabanalarga
+5,Antioquia,5631,Sabaneta
+5,Antioquia,5642,Salgar
+5,Antioquia,5647,San Andrés de Cuerquía
+5,Antioquia,5649,San Carlos
+5,Antioquia,5652,San Francisco
+5,Antioquia,5656,San Jerónimo
+5,Antioquia,5658,San José de La Montaña
+5,Antioquia,5659,San Juan de Urabá
+5,Antioquia,5660,San Luis
+5,Antioquia,5664,San Pedro de Los Milagros
+5,Antioquia,5665,San Pedro de Urabá
+5,Antioquia,5667,San Rafael
+5,Antioquia,5670,San Roque
+5,Antioquia,5674,San Vicente
+5,Antioquia,5679,Santa Bárbara
+5,Antioquia,5686,Santa Rosa de Osos
+5,Antioquia,5690,Santo Domingo
+5,Antioquia,5697,El Santuario
+5,Antioquia,5736,Segovia
+5,Antioquia,5756,Sonsón
+5,Antioquia,5761,Sopetrán
+5,Antioquia,5789,Támesis
+5,Antioquia,5790,Tarazá
+5,Antioquia,5792,Tarso
+5,Antioquia,5809,Titiribí
+5,Antioquia,5819,Toledo
+5,Antioquia,5837,Turbo
+5,Antioquia,5842,Uramita
+5,Antioquia,5847,Urrao
+5,Antioquia,5854,Valdivia
+5,Antioquia,5856,Valparaíso
+5,Antioquia,5858,Vegachí
+5,Antioquia,5861,Venecia
+5,Antioquia,5873,Vigía del Fuerte
+5,Antioquia,5885,Yalí
+5,Antioquia,5887,Yarumal
+5,Antioquia,5890,Yolombó
+5,Antioquia,5893,Yondó
+5,Antioquia,5895,Zaragoza
+8,Atlántico,8001,Barranquilla
+8,Atlántico,8078,Baranoa
+8,Atlántico,8137,Campo de La Cruz
+8,Atlántico,8141,Candelaria
+8,Atlántico,8296,Galapa
+8,Atlántico,8372,Juan de Acosta
+8,Atlántico,8421,Luruaco
+8,Atlántico,8433,Malambo
+8,Atlántico,8436,Manatí
+8,Atlántico,8520,Palmar de Varela
+8,Atlántico,8549,Piojó
+8,Atlántico,8558,Polonuevo
+8,Atlántico,8560,Ponedera
+8,Atlántico,8573,Puerto Colombia
+8,Atlántico,8606,Repelón
+8,Atlántico,8634,Sabanagrande
+8,Atlántico,8638,Sabanalarga
+8,Atlántico,8675,Santa Lucía
+8,Atlántico,8685,Santo Tomás
+8,Atlántico,8758,Soledad
+8,Atlántico,8770,Suan
+8,Atlántico,8832,Tubará
+8,Atlántico,8849,Usiacurí
+11,"Bogotá, D.C.",11001,"Bogotá, D.C."
+13,Bolívar,13001,Cartagena de Indias
+13,Bolívar,13006,Achí
+13,Bolívar,13030,Altos del Rosario
+13,Bolívar,13042,Arenal
+13,Bolívar,13052,Arjona
+13,Bolívar,13062,Arroyohondo
+13,Bolívar,13074,Barranco de Loba
+13,Bolívar,13140,Calamar
+13,Bolívar,13160,Cantagallo
+13,Bolívar,13188,Cicuco
+13,Bolívar,13212,Córdoba
+13,Bolívar,13222,Clemencia
+13,Bolívar,13244,El Carmen de Bolívar
+13,Bolívar,13248,El Guamo
+13,Bolívar,13268,El Peñón
+13,Bolívar,13300,Hatillo de Loba
+13,Bolívar,13430,Magangué
+13,Bolívar,13433,Mahates
+13,Bolívar,13440,Margarita
+13,Bolívar,13442,María La Baja
+13,Bolívar,13458,Montecristo
+13,Bolívar,13468,Mompós
+13,Bolívar,13473,Morales
+13,Bolívar,13490,Norosí
+13,Bolívar,13549,Pinillos
+13,Bolívar,13580,Regidor
+13,Bolívar,13600,Río Viejo
+13,Bolívar,13620,San Cristóbal
+13,Bolívar,13647,San Estanislao
+13,Bolívar,13650,San Fernando
+13,Bolívar,13654,San Jacinto
+13,Bolívar,13655,San Jacinto del Cauca
+13,Bolívar,13657,San Juan Nepomuceno
+13,Bolívar,13667,San Martín de Loba
+13,Bolívar,13670,San Pablo
+13,Bolívar,13673,Santa Catalina
+13,Bolívar,13683,Santa Rosa
+13,Bolívar,13688,Santa Rosa del Sur
+13,Bolívar,13744,Simití
+13,Bolívar,13760,Soplaviento
+13,Bolívar,13780,Talaigua Nuevo
+13,Bolívar,13810,Tiquisio
+13,Bolívar,13836,Turbaco
+13,Bolívar,13838,Turbaná
+13,Bolívar,13873,Villanueva
+13,Bolívar,13894,Zambrano
+15,Boyacá,15001,Tunja
+15,Boyacá,15022,Almeida
+15,Boyacá,15047,Aquitania
+15,Boyacá,15051,Arcabuco
+15,Boyacá,15087,Belén
+15,Boyacá,15090,Berbeo
+15,Boyacá,15092,Betéitiva
+15,Boyacá,15097,Boavita
+15,Boyacá,15104,Boyacá
+15,Boyacá,15106,Briceño
+15,Boyacá,15109,Buenavista
+15,Boyacá,15114,Busbanzá
+15,Boyacá,15131,Caldas
+15,Boyacá,15135,Campohermoso
+15,Boyacá,15162,Cerinza
+15,Boyacá,15172,Chinavita
+15,Boyacá,15176,Chiquinquirá
+15,Boyacá,15180,Chiscas
+15,Boyacá,15183,Chita
+15,Boyacá,15185,Chitaraque
+15,Boyacá,15187,Chivatá
+15,Boyacá,15189,Ciénega
+15,Boyacá,15204,Cómbita
+15,Boyacá,15212,Coper
+15,Boyacá,15215,Corrales
+15,Boyacá,15218,Covarachía
+15,Boyacá,15223,Cubará
+15,Boyacá,15224,Cucaita
+15,Boyacá,15226,Cuítiva
+15,Boyacá,15232,Chíquiza
+15,Boyacá,15236,Chivor
+15,Boyacá,15238,Duitama
+15,Boyacá,15244,El Cocuy
+15,Boyacá,15248,El Espino
+15,Boyacá,15272,Firavitoba
+15,Boyacá,15276,Floresta
+15,Boyacá,15293,Gachantivá
+15,Boyacá,15296,Gámeza
+15,Boyacá,15299,Garagoa
+15,Boyacá,15317,Guacamayas
+15,Boyacá,15322,Guateque
+15,Boyacá,15325,Guayatá
+15,Boyacá,15332,Güicán de La Sierra
+15,Boyacá,15362,Iza
+15,Boyacá,15367,Jenesano
+15,Boyacá,15368,Jericó
+15,Boyacá,15377,Labranzagrande
+15,Boyacá,15380,La Capilla
+15,Boyacá,15401,La Victoria
+15,Boyacá,15403,La Uvita
+15,Boyacá,15407,Villa de Leyva
+15,Boyacá,15425,Macanal
+15,Boyacá,15442,Maripí
+15,Boyacá,15455,Miraflores
+15,Boyacá,15464,Mongua
+15,Boyacá,15466,Monguí
+15,Boyacá,15469,Moniquirá
+15,Boyacá,15476,Motavita
+15,Boyacá,15480,Muzo
+15,Boyacá,15491,Nobsa
+15,Boyacá,15494,Nuevo Colón
+15,Boyacá,15500,Oicatá
+15,Boyacá,15507,Otanche
+15,Boyacá,15511,Pachavita
+15,Boyacá,15514,Páez
+15,Boyacá,15516,Paipa
+15,Boyacá,15518,Pajarito
+15,Boyacá,15522,Panqueba
+15,Boyacá,15531,Pauna
+15,Boyacá,15533,Paya
+15,Boyacá,15537,Paz de Río
+15,Boyacá,15542,Pesca
+15,Boyacá,15550,Pisba
+15,Boyacá,15572,Puerto Boyacá
+15,Boyacá,15580,Quípama
+15,Boyacá,15599,Ramiriquí
+15,Boyacá,15600,Ráquira
+15,Boyacá,15621,Rondón
+15,Boyacá,15632,Saboyá
+15,Boyacá,15638,Sáchica
+15,Boyacá,15646,Samacá
+15,Boyacá,15660,San Eduardo
+15,Boyacá,15664,San José de Pare
+15,Boyacá,15667,San Luis de Gaceno
+15,Boyacá,15673,San Mateo
+15,Boyacá,15676,San Miguel de Sema
+15,Boyacá,15681,San Pablo de Borbur
+15,Boyacá,15686,Santana
+15,Boyacá,15690,Santa María
+15,Boyacá,15693,Santa Rosa de Viterbo
+15,Boyacá,15696,Santa Sofía
+15,Boyacá,15720,Sativanorte
+15,Boyacá,15723,Sativasur
+15,Boyacá,15740,Siachoque
+15,Boyacá,15753,Soatá
+15,Boyacá,15755,Socotá
+15,Boyacá,15757,Socha
+15,Boyacá,15759,Sogamoso
+15,Boyacá,15761,Somondoco
+15,Boyacá,15762,Sora
+15,Boyacá,15763,Sotaquirá
+15,Boyacá,15764,Soracá
+15,Boyacá,15774,Susacón
+15,Boyacá,15776,Sutamarchán
+15,Boyacá,15778,Sutatenza
+15,Boyacá,15790,Tasco
+15,Boyacá,15798,Tenza
+15,Boyacá,15804,Tibaná
+15,Boyacá,15806,Tibasosa
+15,Boyacá,15808,Tinjacá
+15,Boyacá,15810,Tipacoque
+15,Boyacá,15814,Toca
+15,Boyacá,15816,Togüí
+15,Boyacá,15820,Tópaga
+15,Boyacá,15822,Tota
+15,Boyacá,15832,Tununguá
+15,Boyacá,15835,Turmequé
+15,Boyacá,15837,Tuta
+15,Boyacá,15839,Tutazá
+15,Boyacá,15842,Úmbita
+15,Boyacá,15861,Ventaquemada
+15,Boyacá,15879,Viracachá
+15,Boyacá,15897,Zetaquira
+17,Caldas,17001,Manizales
+17,Caldas,17013,Aguadas
+17,Caldas,17042,Anserma
+17,Caldas,17050,Aranzazu
+17,Caldas,17088,Belalcázar
+17,Caldas,17174,Chinchiná
+17,Caldas,17272,Filadelfia
+17,Caldas,17380,La Dorada
+17,Caldas,17388,La Merced
+17,Caldas,17433,Manzanares
+17,Caldas,17442,Marmato
+17,Caldas,17444,Marquetalia
+17,Caldas,17446,Marulanda
+17,Caldas,17486,Neira
+17,Caldas,17495,Norcasia
+17,Caldas,17513,Pácora
+17,Caldas,17524,Palestina
+17,Caldas,17541,Pensilvania
+17,Caldas,17614,Riosucio
+17,Caldas,17616,Risaralda
+17,Caldas,17653,Salamina
+17,Caldas,17662,Samaná
+17,Caldas,17665,San José
+17,Caldas,17777,Supía
+17,Caldas,17867,Victoria
+17,Caldas,17873,Villamaría
+17,Caldas,17877,Viterbo
+18,Caquetá,18001,Florencia
+18,Caquetá,18029,Albania
+18,Caquetá,18094,Belén de Los Andaquíes
+18,Caquetá,18150,Cartagena del Chairá
+18,Caquetá,18205,Curillo
+18,Caquetá,18247,El Doncello
+18,Caquetá,18256,El Paujíl
+18,Caquetá,18410,La Montañita
+18,Caquetá,18460,Milán
+18,Caquetá,18479,Morelia
+18,Caquetá,18592,Puerto Rico
+18,Caquetá,18610,San José del Fragua
+18,Caquetá,18753,San Vicente del Caguán
+18,Caquetá,18756,Solano
+18,Caquetá,18785,Solita
+18,Caquetá,18860,Valparaíso
+19,Cauca,19001,Popayán
+19,Cauca,19022,Almaguer
+19,Cauca,19050,Argelia
+19,Cauca,19075,Balboa
+19,Cauca,19100,Bolívar
+19,Cauca,19110,Buenos Aires
+19,Cauca,19130,Cajibío
+19,Cauca,19137,Caldono
+19,Cauca,19142,Caloto
+19,Cauca,19212,Corinto
+19,Cauca,19256,El Tambo
+19,Cauca,19290,Florencia
+19,Cauca,19300,Guachené
+19,Cauca,19318,Guapi
+19,Cauca,19355,Inzá
+19,Cauca,19364,Jambaló
+19,Cauca,19392,La Sierra
+19,Cauca,19397,La Vega
+19,Cauca,19418,López de Micay
+19,Cauca,19450,Mercaderes
+19,Cauca,19455,Miranda
+19,Cauca,19473,Morales
+19,Cauca,19513,Padilla
+19,Cauca,19517,Páez
+19,Cauca,19532,Patía
+19,Cauca,19533,Piamonte
+19,Cauca,19548,Piendamó - Tunía
+19,Cauca,19573,Puerto Tejada
+19,Cauca,19585,Puracé
+19,Cauca,19622,Rosas
+19,Cauca,19693,San Sebastián
+19,Cauca,19698,Santander de Quilichao
+19,Cauca,19701,Santa Rosa
+19,Cauca,19743,Silvia
+19,Cauca,19760,Sotará Paispamba
+19,Cauca,19780,Suárez
+19,Cauca,19785,Sucre
+19,Cauca,19807,Timbío
+19,Cauca,19809,Timbiquí
+19,Cauca,19821,Toribío
+19,Cauca,19824,Totoró
+19,Cauca,19845,Villa Rica
+20,Cesar,20001,Valledupar
+20,Cesar,20011,Aguachica
+20,Cesar,20013,Agustín Codazzi
+20,Cesar,20032,Astrea
+20,Cesar,20045,Becerril
+20,Cesar,20060,Bosconia
+20,Cesar,20175,Chimichagua
+20,Cesar,20178,Chiriguaná
+20,Cesar,20228,Curumaní
+20,Cesar,20238,El Copey
+20,Cesar,20250,El Paso
+20,Cesar,20295,Gamarra
+20,Cesar,20310,González
+20,Cesar,20383,La Gloria
+20,Cesar,20400,La Jagua de Ibirico
+20,Cesar,20443,Manaure Balcón del Cesar
+20,Cesar,20517,Pailitas
+20,Cesar,20550,Pelaya
+20,Cesar,20570,Pueblo Bello
+20,Cesar,20614,Río de Oro
+20,Cesar,20621,La Paz
+20,Cesar,20710,San Alberto
+20,Cesar,20750,San Diego
+20,Cesar,20770,San Martín
+20,Cesar,20787,Tamalameque
+23,Córdoba,23001,Montería
+23,Córdoba,23068,Ayapel
+23,Córdoba,23079,Buenavista
+23,Córdoba,23090,Canalete
+23,Córdoba,23162,Cereté
+23,Córdoba,23168,Chimá
+23,Córdoba,23182,Chinú
+23,Córdoba,23189,Ciénaga de Oro
+23,Córdoba,23300,Cotorra
+23,Córdoba,23350,La Apartada
+23,Córdoba,23417,Lorica
+23,Córdoba,23419,Los Córdobas
+23,Córdoba,23464,Momil
+23,Córdoba,23466,Montelíbano
+23,Córdoba,23500,Moñitos
+23,Córdoba,23555,Planeta Rica
+23,Córdoba,23570,Pueblo Nuevo
+23,Córdoba,23574,Puerto Escondido
+23,Córdoba,23580,Puerto Libertador
+23,Córdoba,23586,Purísima de La Concepción
+23,Córdoba,23660,Sahagún
+23,Córdoba,23670,San Andrés Sotavento
+23,Córdoba,23672,San Antero
+23,Córdoba,23675,San Bernardo del Viento
+23,Córdoba,23678,San Carlos
+23,Córdoba,23682,San José de Uré
+23,Córdoba,23686,San Pelayo
+23,Córdoba,23807,Tierralta
+23,Córdoba,23815,Tuchín
+23,Córdoba,23855,Valencia
+25,Cundinamarca,25001,Agua de Dios
+25,Cundinamarca,25019,Albán
+25,Cundinamarca,25035,Anapoima
+25,Cundinamarca,25040,Anolaima
+25,Cundinamarca,25053,Arbeláez
+25,Cundinamarca,25086,Beltrán
+25,Cundinamarca,25095,Bituima
+25,Cundinamarca,25099,Bojacá
+25,Cundinamarca,25120,Cabrera
+25,Cundinamarca,25123,Cachipay
+25,Cundinamarca,25126,Cajicá
+25,Cundinamarca,25148,Caparrapí
+25,Cundinamarca,25151,Cáqueza
+25,Cundinamarca,25154,Carmen de Carupa
+25,Cundinamarca,25168,Chaguaní
+25,Cundinamarca,25175,Chía
+25,Cundinamarca,25178,Chipaque
+25,Cundinamarca,25181,Choachí
+25,Cundinamarca,25183,Chocontá
+25,Cundinamarca,25200,Cogua
+25,Cundinamarca,25214,Cota
+25,Cundinamarca,25224,Cucunubá
+25,Cundinamarca,25245,El Colegio
+25,Cundinamarca,25258,El Peñón
+25,Cundinamarca,25260,El Rosal
+25,Cundinamarca,25269,Facatativá
+25,Cundinamarca,25279,Fómeque
+25,Cundinamarca,25281,Fosca
+25,Cundinamarca,25286,Funza
+25,Cundinamarca,25288,Fúquene
+25,Cundinamarca,25290,Fusagasugá
+25,Cundinamarca,25293,Gachalá
+25,Cundinamarca,25295,Gachancipá
+25,Cundinamarca,25297,Gachetá
+25,Cundinamarca,25299,Gama
+25,Cundinamarca,25307,Girardot
+25,Cundinamarca,25312,Granada
+25,Cundinamarca,25317,Guachetá
+25,Cundinamarca,25320,Guaduas
+25,Cundinamarca,25322,Guasca
+25,Cundinamarca,25324,Guataquí
+25,Cundinamarca,25326,Guatavita
+25,Cundinamarca,25328,Guayabal de Síquima
+25,Cundinamarca,25335,Guayabetal
+25,Cundinamarca,25339,Gutiérrez
+25,Cundinamarca,25368,Jerusalén
+25,Cundinamarca,25372,Junín
+25,Cundinamarca,25377,La Calera
+25,Cundinamarca,25386,La Mesa
+25,Cundinamarca,25394,La Palma
+25,Cundinamarca,25398,La Peña
+25,Cundinamarca,25402,La Vega
+25,Cundinamarca,25407,Lenguazaque
+25,Cundinamarca,25426,Machetá
+25,Cundinamarca,25430,Madrid
+25,Cundinamarca,25436,Manta
+25,Cundinamarca,25438,Medina
+25,Cundinamarca,25473,Mosquera
+25,Cundinamarca,25483,Nariño
+25,Cundinamarca,25486,Nemocón
+25,Cundinamarca,25488,Nilo
+25,Cundinamarca,25489,Nimaima
+25,Cundinamarca,25491,Nocaima
+25,Cundinamarca,25506,Venecia
+25,Cundinamarca,25513,Pacho
+25,Cundinamarca,25518,Paime
+25,Cundinamarca,25524,Pandi
+25,Cundinamarca,25530,Paratebueno
+25,Cundinamarca,25535,Pasca
+25,Cundinamarca,25572,Puerto Salgar
+25,Cundinamarca,25580,Pulí
+25,Cundinamarca,25592,Quebradanegra
+25,Cundinamarca,25594,Quetame
+25,Cundinamarca,25596,Quipile
+25,Cundinamarca,25599,Apulo
+25,Cundinamarca,25612,Ricaurte
+25,Cundinamarca,25645,San Antonio del Tequendama
+25,Cundinamarca,25649,San Bernardo
+25,Cundinamarca,25653,San Cayetano
+25,Cundinamarca,25658,San Francisco
+25,Cundinamarca,25662,San Juan de Rioseco
+25,Cundinamarca,25718,Sasaima
+25,Cundinamarca,25736,Sesquilé
+25,Cundinamarca,25740,Sibaté
+25,Cundinamarca,25743,Silvania
+25,Cundinamarca,25745,Simijaca
+25,Cundinamarca,25754,Soacha
+25,Cundinamarca,25758,Sopó
+25,Cundinamarca,25769,Subachoque
+25,Cundinamarca,25772,Suesca
+25,Cundinamarca,25777,Supatá
+25,Cundinamarca,25779,Susa
+25,Cundinamarca,25781,Sutatausa
+25,Cundinamarca,25785,Tabio
+25,Cundinamarca,25793,Tausa
+25,Cundinamarca,25797,Tena
+25,Cundinamarca,25799,Tenjo
+25,Cundinamarca,25805,Tibacuy
+25,Cundinamarca,25807,Tibirita
+25,Cundinamarca,25815,Tocaima
+25,Cundinamarca,25817,Tocancipá
+25,Cundinamarca,25823,Topaipí
+25,Cundinamarca,25839,Ubalá
+25,Cundinamarca,25841,Ubaque
+25,Cundinamarca,25843,Villa de San Diego de Ubaté
+25,Cundinamarca,25845,Une
+25,Cundinamarca,25851,Útica
+25,Cundinamarca,25862,Vergara
+25,Cundinamarca,25867,Vianí
+25,Cundinamarca,25871,Villagómez
+25,Cundinamarca,25873,Villapinzón
+25,Cundinamarca,25875,Villeta
+25,Cundinamarca,25878,Viotá
+25,Cundinamarca,25885,Yacopí
+25,Cundinamarca,25898,Zipacón
+25,Cundinamarca,25899,Zipaquirá
+27,Chocó,27001,Quibdó
+27,Chocó,27006,Acandí
+27,Chocó,27025,Alto Baudó
+27,Chocó,27050,Atrato
+27,Chocó,27073,Bagadó
+27,Chocó,27075,Bahía Solano
+27,Chocó,27077,Bajo Baudó
+27,Chocó,27099,Bojayá
+27,Chocó,27135,El Cantón del San Pablo
+27,Chocó,27150,Carmen del Darién
+27,Chocó,27160,Cértegui
+27,Chocó,27205,Condoto
+27,Chocó,27245,El Carmen de Atrato
+27,Chocó,27250,El Litoral del San Juan
+27,Chocó,27361,Istmina
+27,Chocó,27372,Juradó
+27,Chocó,27413,Lloró
+27,Chocó,27425,Medio Atrato
+27,Chocó,27430,Medio Baudó
+27,Chocó,27450,Medio San Juan
+27,Chocó,27491,Nóvita
+27,Chocó,27495,Nuquí
+27,Chocó,27580,Río Iró
+27,Chocó,27600,Río Quito
+27,Chocó,27615,Riosucio
+27,Chocó,27660,San José del Palmar
+27,Chocó,27745,Sipí
+27,Chocó,27787,Tadó
+27,Chocó,27800,Unguía
+27,Chocó,27810,Unión Panamericana
+41,Huila,41001,Neiva
+41,Huila,41006,Acevedo
+41,Huila,41013,Agrado
+41,Huila,41016,Aipe
+41,Huila,41020,Algeciras
+41,Huila,41026,Altamira
+41,Huila,41078,Baraya
+41,Huila,41132,Campoalegre
+41,Huila,41206,Colombia
+41,Huila,41244,Elías
+41,Huila,41298,Garzón
+41,Huila,41306,Gigante
+41,Huila,41319,Guadalupe
+41,Huila,41349,Hobo
+41,Huila,41357,Íquira
+41,Huila,41359,Isnos
+41,Huila,41378,La Argentina
+41,Huila,41396,La Plata
+41,Huila,41483,Nátaga
+41,Huila,41503,Oporapa
+41,Huila,41518,Paicol
+41,Huila,41524,Palermo
+41,Huila,41530,Palestina
+41,Huila,41548,Pital
+41,Huila,41551,Pitalito
+41,Huila,41615,Rivera
+41,Huila,41660,Saladoblanco
+41,Huila,41668,San Agustín
+41,Huila,41676,Santa María
+41,Huila,41770,Suaza
+41,Huila,41791,Tarqui
+41,Huila,41797,Tesalia
+41,Huila,41799,Tello
+41,Huila,41801,Teruel
+41,Huila,41807,Timaná
+41,Huila,41872,Villavieja
+41,Huila,41885,Yaguará
+44,La Guajira,44001,Riohacha
+44,La Guajira,44035,Albania
+44,La Guajira,44078,Barrancas
+44,La Guajira,44090,Dibulla
+44,La Guajira,44098,Distracción
+44,La Guajira,44110,El Molino
+44,La Guajira,44279,Fonseca
+44,La Guajira,44378,Hatonuevo
+44,La Guajira,44420,La Jagua del Pilar
+44,La Guajira,44430,Maicao
+44,La Guajira,44560,Manaure
+44,La Guajira,44650,San Juan del Cesar
+44,La Guajira,44847,Uribia
+44,La Guajira,44855,Urumita
+44,La Guajira,44874,Villanueva
+47,Magdalena,47001,Santa Marta
+47,Magdalena,47030,Algarrobo
+47,Magdalena,47053,Aracataca
+47,Magdalena,47058,Ariguaní
+47,Magdalena,47161,Cerro de San Antonio
+47,Magdalena,47170,Chibolo
+47,Magdalena,47189,Ciénaga
+47,Magdalena,47205,Concordia
+47,Magdalena,47245,El Banco
+47,Magdalena,47258,El Piñón
+47,Magdalena,47268,El Retén
+47,Magdalena,47288,Fundación
+47,Magdalena,47318,Guamal
+47,Magdalena,47460,Nueva Granada
+47,Magdalena,47541,Pedraza
+47,Magdalena,47545,Pijiño del Carmen
+47,Magdalena,47551,Pivijay
+47,Magdalena,47555,Plato
+47,Magdalena,47570,Puebloviejo
+47,Magdalena,47605,Remolino
+47,Magdalena,47660,Sabanas de San Ángel
+47,Magdalena,47675,Salamina
+47,Magdalena,47692,San Sebastián de Buenavista
+47,Magdalena,47703,San Zenón
+47,Magdalena,47707,Santa Ana
+47,Magdalena,47720,Santa Bárbara de Pinto
+47,Magdalena,47745,Sitionuevo
+47,Magdalena,47798,Tenerife
+47,Magdalena,47960,Zapayán
+47,Magdalena,47980,Zona Bananera
+50,Meta,50001,Villavicencio
+50,Meta,50006,Acacías
+50,Meta,50110,Barranca de Upía
+50,Meta,50124,Cabuyaro
+50,Meta,50150,Castilla la Nueva
+50,Meta,50223,Cubarral
+50,Meta,50226,Cumaral
+50,Meta,50245,El Calvario
+50,Meta,50251,El Castillo
+50,Meta,50270,El Dorado
+50,Meta,50287,Fuente de Oro
+50,Meta,50313,Granada
+50,Meta,50318,Guamal
+50,Meta,50325,Mapiripán
+50,Meta,50330,Mesetas
+50,Meta,50350,La Macarena
+50,Meta,50370,Uribe
+50,Meta,50400,Lejanías
+50,Meta,50450,Puerto Concordia
+50,Meta,50568,Puerto Gaitán
+50,Meta,50573,Puerto López
+50,Meta,50577,Puerto Lleras
+50,Meta,50590,Puerto Rico
+50,Meta,50606,Restrepo
+50,Meta,50680,San Carlos de Guaroa
+50,Meta,50683,San Juan de Arama
+50,Meta,50686,San Juanito
+50,Meta,50689,San Martín
+50,Meta,50711,Vistahermosa
+52,Nariño,52001,Pasto
+52,Nariño,52019,Albán
+52,Nariño,52022,Aldana
+52,Nariño,52036,Ancuya
+52,Nariño,52051,Arboleda
+52,Nariño,52079,Barbacoas
+52,Nariño,52083,Belén
+52,Nariño,52110,Buesaco
+52,Nariño,52203,Colón
+52,Nariño,52207,Consacá
+52,Nariño,52210,Contadero
+52,Nariño,52215,Córdoba
+52,Nariño,52224,Cuaspud Carlosama
+52,Nariño,52227,Cumbal
+52,Nariño,52233,Cumbitara
+52,Nariño,52240,Chachagüí
+52,Nariño,52250,El Charco
+52,Nariño,52254,El Peñol
+52,Nariño,52256,El Rosario
+52,Nariño,52258,El Tablón de Gómez
+52,Nariño,52260,El Tambo
+52,Nariño,52287,Funes
+52,Nariño,52317,Guachucal
+52,Nariño,52320,Guaitarilla
+52,Nariño,52323,Gualmatán
+52,Nariño,52352,Iles
+52,Nariño,52354,Imués
+52,Nariño,52356,Ipiales
+52,Nariño,52378,La Cruz
+52,Nariño,52381,La Florida
+52,Nariño,52385,La Llanada
+52,Nariño,52390,La Tola
+52,Nariño,52399,La Unión
+52,Nariño,52405,Leiva
+52,Nariño,52411,Linares
+52,Nariño,52418,Los Andes
+52,Nariño,52427,Magüí
+52,Nariño,52435,Mallama
+52,Nariño,52473,Mosquera
+52,Nariño,52480,Nariño
+52,Nariño,52490,Olaya Herrera
+52,Nariño,52506,Ospina
+52,Nariño,52520,Francisco Pizarro
+52,Nariño,52540,Policarpa
+52,Nariño,52560,Potosí
+52,Nariño,52565,Providencia
+52,Nariño,52573,Puerres
+52,Nariño,52585,Pupiales
+52,Nariño,52612,Ricaurte
+52,Nariño,52621,Roberto Payán
+52,Nariño,52678,Samaniego
+52,Nariño,52683,Sandoná
+52,Nariño,52685,San Bernardo
+52,Nariño,52687,San Lorenzo
+52,Nariño,52693,San Pablo
+52,Nariño,52694,San Pedro de Cartago
+52,Nariño,52696,Santa Bárbara
+52,Nariño,52699,Santacruz
+52,Nariño,52720,Sapuyes
+52,Nariño,52786,Taminango
+52,Nariño,52788,Tangua
+52,Nariño,52835,San Andrés de Tumaco
+52,Nariño,52838,Túquerres
+52,Nariño,52885,Yacuanquer
+54,Norte de Santander,54001,San José de Cúcuta
+54,Norte de Santander,54003,Ábrego
+54,Norte de Santander,54051,Arboledas
+54,Norte de Santander,54099,Bochalema
+54,Norte de Santander,54109,Bucarasica
+54,Norte de Santander,54125,Cácota
+54,Norte de Santander,54128,Cáchira
+54,Norte de Santander,54172,Chinácota
+54,Norte de Santander,54174,Chitagá
+54,Norte de Santander,54206,Convención
+54,Norte de Santander,54223,Cucutilla
+54,Norte de Santander,54239,Durania
+54,Norte de Santander,54245,El Carmen
+54,Norte de Santander,54250,El Tarra
+54,Norte de Santander,54261,El Zulia
+54,Norte de Santander,54313,Gramalote
+54,Norte de Santander,54344,Hacarí
+54,Norte de Santander,54347,Herrán
+54,Norte de Santander,54377,Labateca
+54,Norte de Santander,54385,La Esperanza
+54,Norte de Santander,54398,La Playa
+54,Norte de Santander,54405,Los Patios
+54,Norte de Santander,54418,Lourdes
+54,Norte de Santander,54480,Mutiscua
+54,Norte de Santander,54498,Ocaña
+54,Norte de Santander,54518,Pamplona
+54,Norte de Santander,54520,Pamplonita
+54,Norte de Santander,54553,Puerto Santander
+54,Norte de Santander,54599,Ragonvalia
+54,Norte de Santander,54660,Salazar
+54,Norte de Santander,54670,San Calixto
+54,Norte de Santander,54673,San Cayetano
+54,Norte de Santander,54680,Santiago
+54,Norte de Santander,54720,Sardinata
+54,Norte de Santander,54743,Silos
+54,Norte de Santander,54800,Teorama
+54,Norte de Santander,54810,Tibú
+54,Norte de Santander,54820,Toledo
+54,Norte de Santander,54871,Villa Caro
+54,Norte de Santander,54874,Villa del Rosario
+63,Quindio,63001,Armenia
+63,Quindio,63111,Buenavista
+63,Quindio,63130,Calarcá
+63,Quindio,63190,Circasia
+63,Quindio,63212,Córdoba
+63,Quindio,63272,Filandia
+63,Quindio,63302,Génova
+63,Quindio,63401,La Tebaida
+63,Quindio,63470,Montenegro
+63,Quindio,63548,Pijao
+63,Quindio,63594,Quimbaya
+63,Quindio,63690,Salento
+66,Risaralda,66001,Pereira
+66,Risaralda,66045,Apía
+66,Risaralda,66075,Balboa
+66,Risaralda,66088,Belén de Umbría
+66,Risaralda,66170,Dosquebradas
+66,Risaralda,66318,Guática
+66,Risaralda,66383,La Celia
+66,Risaralda,66400,La Virginia
+66,Risaralda,66440,Marsella
+66,Risaralda,66456,Mistrató
+66,Risaralda,66572,Pueblo Rico
+66,Risaralda,66594,Quinchía
+66,Risaralda,66682,Santa Rosa de Cabal
+66,Risaralda,66687,Santuario
+68,Santander,68001,Bucaramanga
+68,Santander,68013,Aguada
+68,Santander,68020,Albania
+68,Santander,68051,Aratoca
+68,Santander,68077,Barbosa
+68,Santander,68079,Barichara
+68,Santander,68081,Barrancabermeja
+68,Santander,68092,Betulia
+68,Santander,68101,Bolívar
+68,Santander,68121,Cabrera
+68,Santander,68132,California
+68,Santander,68147,Capitanejo
+68,Santander,68152,Carcasí
+68,Santander,68160,Cepitá
+68,Santander,68162,Cerrito
+68,Santander,68167,Charalá
+68,Santander,68169,Charta
+68,Santander,68176,Chimá
+68,Santander,68179,Chipatá
+68,Santander,68190,Cimitarra
+68,Santander,68207,Concepción
+68,Santander,68209,Confines
+68,Santander,68211,Contratación
+68,Santander,68217,Coromoro
+68,Santander,68229,Curití
+68,Santander,68235,El Carmen de Chucurí
+68,Santander,68245,El Guacamayo
+68,Santander,68250,El Peñón
+68,Santander,68255,El Playón
+68,Santander,68264,Encino
+68,Santander,68266,Enciso
+68,Santander,68271,Florián
+68,Santander,68276,Floridablanca
+68,Santander,68296,Galán
+68,Santander,68298,Gámbita
+68,Santander,68307,Girón
+68,Santander,68318,Guaca
+68,Santander,68320,Guadalupe
+68,Santander,68322,Guapotá
+68,Santander,68324,Guavatá
+68,Santander,68327,Güepsa
+68,Santander,68344,Hato
+68,Santander,68368,Jesús María
+68,Santander,68370,Jordán
+68,Santander,68377,La Belleza
+68,Santander,68385,Landázuri
+68,Santander,68397,La Paz
+68,Santander,68406,Lebrija
+68,Santander,68418,Los Santos
+68,Santander,68425,Macaravita
+68,Santander,68432,Málaga
+68,Santander,68444,Matanza
+68,Santander,68464,Mogotes
+68,Santander,68468,Molagavita
+68,Santander,68498,Ocamonte
+68,Santander,68500,Oiba
+68,Santander,68502,Onzaga
+68,Santander,68522,Palmar
+68,Santander,68524,Palmas del Socorro
+68,Santander,68533,Páramo
+68,Santander,68547,Piedecuesta
+68,Santander,68549,Pinchote
+68,Santander,68572,Puente Nacional
+68,Santander,68573,Puerto Parra
+68,Santander,68575,Puerto Wilches
+68,Santander,68615,Rionegro
+68,Santander,68655,Sabana de Torres
+68,Santander,68669,San Andrés
+68,Santander,68673,San Benito
+68,Santander,68679,San Gil
+68,Santander,68682,San Joaquín
+68,Santander,68684,San José de Miranda
+68,Santander,68686,San Miguel
+68,Santander,68689,San Vicente de Chucurí
+68,Santander,68705,Santa Bárbara
+68,Santander,68720,Santa Helena del Opón
+68,Santander,68745,Simacota
+68,Santander,68755,Socorro
+68,Santander,68770,Suaita
+68,Santander,68773,Sucre
+68,Santander,68780,Suratá
+68,Santander,68820,Tona
+68,Santander,68855,Valle de San José
+68,Santander,68861,Vélez
+68,Santander,68867,Vetas
+68,Santander,68872,Villanueva
+68,Santander,68895,Zapatoca
+70,Sucre,70001,Sincelejo
+70,Sucre,70110,Buenavista
+70,Sucre,70124,Caimito
+70,Sucre,70204,Coloso
+70,Sucre,70215,Corozal
+70,Sucre,70221,Coveñas
+70,Sucre,70230,Chalán
+70,Sucre,70233,El Roble
+70,Sucre,70235,Galeras
+70,Sucre,70265,Guaranda
+70,Sucre,70400,La Unión
+70,Sucre,70418,Los Palmitos
+70,Sucre,70429,Majagual
+70,Sucre,70473,Morroa
+70,Sucre,70508,Ovejas
+70,Sucre,70523,Palmito
+70,Sucre,70670,Sampués
+70,Sucre,70678,San Benito Abad
+70,Sucre,70702,San Juan de Betulia
+70,Sucre,70708,San Marcos
+70,Sucre,70713,San Onofre
+70,Sucre,70717,San Pedro
+70,Sucre,70742,San Luis de Sincé
+70,Sucre,70771,Sucre
+70,Sucre,70820,Santiago de Tolú
+70,Sucre,70823,Tolú Viejo
+73,Tolima,73001,Ibagué
+73,Tolima,73024,Alpujarra
+73,Tolima,73026,Alvarado
+73,Tolima,73030,Ambalema
+73,Tolima,73043,Anzoátegui
+73,Tolima,73055,Armero
+73,Tolima,73067,Ataco
+73,Tolima,73124,Cajamarca
+73,Tolima,73148,Carmen de Apicalá
+73,Tolima,73152,Casabianca
+73,Tolima,73168,Chaparral
+73,Tolima,73200,Coello
+73,Tolima,73217,Coyaima
+73,Tolima,73226,Cunday
+73,Tolima,73236,Dolores
+73,Tolima,73268,Espinal
+73,Tolima,73270,Falan
+73,Tolima,73275,Flandes
+73,Tolima,73283,Fresno
+73,Tolima,73319,Guamo
+73,Tolima,73347,Herveo
+73,Tolima,73349,Honda
+73,Tolima,73352,Icononzo
+73,Tolima,73408,Lérida
+73,Tolima,73411,Líbano
+73,Tolima,73443,Mariquita
+73,Tolima,73449,Melgar
+73,Tolima,73461,Murillo
+73,Tolima,73483,Natagaima
+73,Tolima,73504,Ortega
+73,Tolima,73520,Palocabildo
+73,Tolima,73547,Piedras
+73,Tolima,73555,Planadas
+73,Tolima,73563,Prado
+73,Tolima,73585,Purificación
+73,Tolima,73616,Rioblanco
+73,Tolima,73622,Roncesvalles
+73,Tolima,73624,Rovira
+73,Tolima,73671,Saldaña
+73,Tolima,73675,San Antonio
+73,Tolima,73678,San Luis
+73,Tolima,73686,Santa Isabel
+73,Tolima,73770,Suárez
+73,Tolima,73854,Valle de San Juan
+73,Tolima,73861,Venadillo
+73,Tolima,73870,Villahermosa
+73,Tolima,73873,Villarrica
+76,Valle del Cauca,76001,Cali
+76,Valle del Cauca,76020,Alcalá
+76,Valle del Cauca,76036,Andalucía
+76,Valle del Cauca,76041,Ansermanuevo
+76,Valle del Cauca,76054,Argelia
+76,Valle del Cauca,76100,Bolívar
+76,Valle del Cauca,76109,Buenaventura
+76,Valle del Cauca,76111,Guadalajara de Buga
+76,Valle del Cauca,76113,Bugalagrande
+76,Valle del Cauca,76122,Caicedonia
+76,Valle del Cauca,76126,Calima
+76,Valle del Cauca,76130,Candelaria
+76,Valle del Cauca,76147,Cartago
+76,Valle del Cauca,76233,Dagua
+76,Valle del Cauca,76243,El Águila
+76,Valle del Cauca,76246,El Cairo
+76,Valle del Cauca,76248,El Cerrito
+76,Valle del Cauca,76250,El Dovio
+76,Valle del Cauca,76275,Florida
+76,Valle del Cauca,76306,Ginebra
+76,Valle del Cauca,76318,Guacarí
+76,Valle del Cauca,76364,Jamundí
+76,Valle del Cauca,76377,La Cumbre
+76,Valle del Cauca,76400,La Unión
+76,Valle del Cauca,76403,La Victoria
+76,Valle del Cauca,76497,Obando
+76,Valle del Cauca,76520,Palmira
+76,Valle del Cauca,76563,Pradera
+76,Valle del Cauca,76606,Restrepo
+76,Valle del Cauca,76616,Riofrío
+76,Valle del Cauca,76622,Roldanillo
+76,Valle del Cauca,76670,San Pedro
+76,Valle del Cauca,76736,Sevilla
+76,Valle del Cauca,76823,Toro
+76,Valle del Cauca,76828,Trujillo
+76,Valle del Cauca,76834,Tuluá
+76,Valle del Cauca,76845,Ulloa
+76,Valle del Cauca,76863,Versalles
+76,Valle del Cauca,76869,Vijes
+76,Valle del Cauca,76890,Yotoco
+76,Valle del Cauca,76892,Yumbo
+76,Valle del Cauca,76895,Zarzal
+81,Arauca,81001,Arauca
+81,Arauca,81065,Arauquita
+81,Arauca,81220,Cravo Norte
+81,Arauca,81300,Fortul
+81,Arauca,81591,Puerto Rondón
+81,Arauca,81736,Saravena
+81,Arauca,81794,Tame
+85,Casanare,85001,Yopal
+85,Casanare,85010,Aguazul
+85,Casanare,85015,Chámeza
+85,Casanare,85125,Hato Corozal
+85,Casanare,85136,La Salina
+85,Casanare,85139,Maní
+85,Casanare,85162,Monterrey
+85,Casanare,85225,Nunchía
+85,Casanare,85230,Orocué
+85,Casanare,85250,Paz de Ariporo
+85,Casanare,85263,Pore
+85,Casanare,85279,Recetor
+85,Casanare,85300,Sabanalarga
+85,Casanare,85315,Sácama
+85,Casanare,85325,San Luis de Palenque
+85,Casanare,85400,Támara
+85,Casanare,85410,Tauramena
+85,Casanare,85430,Trinidad
+85,Casanare,85440,Villanueva
+86,Putumayo,86001,Mocoa
+86,Putumayo,86219,Colón
+86,Putumayo,86320,Orito
+86,Putumayo,86568,Puerto Asís
+86,Putumayo,86569,Puerto Caicedo
+86,Putumayo,86571,Puerto Guzmán
+86,Putumayo,86573,Puerto Leguízamo
+86,Putumayo,86749,Sibundoy
+86,Putumayo,86755,San Francisco
+86,Putumayo,86757,San Miguel
+86,Putumayo,86760,Santiago
+86,Putumayo,86865,Valle del Guamuez
+86,Putumayo,86885,Villagarzón
+88,Archipiélago de San Andrés,88001,San Andrés
+88,Archipiélago de San Andrés,88564,Providencia
+91,Amazonas,91001,Leticia
+91,Amazonas,91263,El Encanto (CD)
+91,Amazonas,91405,La Chorrera (CD)
+91,Amazonas,91407,La Pedrera (CD)
+91,Amazonas,91430,La Victoria (CD)
+91,Amazonas,91460,Miriti - Paraná (CD)
+91,Amazonas,91530,Puerto Alegría (CD)
+91,Amazonas,91536,Puerto Arica (CD)
+91,Amazonas,91540,Puerto Nariño
+91,Amazonas,91669,Puerto Santander (CD)
+91,Amazonas,91798,Tarapacá (CD)
+94,Guainía,94001,Inírida
+94,Guainía,94343,Barrancominas (CD)
+94,Guainía,94663,Mapiripana (CD)
+94,Guainía,94883,San Felipe (CD)
+94,Guainía,94884,Puerto Colombia (CD)
+94,Guainía,94885,La Guadalupe (CD)
+94,Guainía,94886,Cacahual (CD)
+94,Guainía,94887,Pana Pana (CD)
+94,Guainía,94888,Morichal (CD)
+95,Guaviare,95001,San José del Guaviare
+95,Guaviare,95015,Calamar
+95,Guaviare,95025,El Retorno
+95,Guaviare,95200,Miraflores
+97,Vaupés,97001,Mitú
+97,Vaupés,97161,Carurú
+97,Vaupés,97511,Pacoa (CD)
+97,Vaupés,97666,Taraira
+97,Vaupés,97777,Papunahua (CD)
+97,Vaupés,97889,Yavaraté (CD)
+99,Vichada,99001,Puerto Carreño
+99,Vichada,99524,La Primavera
+99,Vichada,99624,Santa Rosalía
+99,Vichada,99773,Cumaribo
