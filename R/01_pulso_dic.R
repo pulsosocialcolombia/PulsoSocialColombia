@@ -1,5 +1,5 @@
 # File: 01_pulso_dic.R
-# Created: Nov 2021 
+# Created: Nov 2021
 #         - Mónica Hernandez (mhernande6@eafit.edu.co)
 #         - Ana M Pirela
 #         - Juan Carlos Muñoz-Mora (jmunozm1@eafit.edu.co)
@@ -10,27 +10,15 @@
 #               - Laura Quintero (lmquinterv@eafit.edu.co)
 # Summary: This script prepares a dictionary of variables for analysis.
 
-## Load data
-# Load the cod_vars data object
 load("data/cod_vars.rda")
 
-## Define function
-#' Dictionary of Pulso Social Colombia
-#'
-#' @return Updates the dictionary for Pulso Social Colombia
-#' @export
-#'
-#' @examples
-#' pulso_diccionario()
-# Define the function 'pulso_diccionario'
 pulso_diccionario <- function(){
 
   # Load the necessary libraries
-  # library(googlesheets4, quietly = TRUE) -- No needed because it was save on local
   require (tidyverse, quietly = TRUE)
   require (stringi, quietly = TRUE)
   require(dplyr, quietly = TRUE)
-  
+
   # Define the Google Sheets URL
   #dic_map <-"https://docs.google.com/spreadsheets/d/1ZEqO-bYWPYixr2xI6fNeW4MCEeyZYqFoIRUKllhbeU8/edit?usp=sharing"
 
@@ -42,7 +30,7 @@ pulso_diccionario <- function(){
   pob_levels <- c("étnia", "etnia", "género", "minorías", "Género", "étnico")
 
   # Create conditional columns for the scatterplots in 'dic'
-  dic <- dic %>% dplyr::mutate(fig_scatter = 
+  dic <- dic %>% dplyr::mutate(fig_scatter =
         ifelse(stringr::str_detect(var_poblacional, paste(pob_levels, collapse = "|")), 1, 0),
                fig_scatter_time = ifelse(max_year != min_year, 1, 0))
 
@@ -76,10 +64,4 @@ pulso_diccionario <- function(){
   ### Return
   return(dic)
 
-  #### ---- This section was deleted because we create a webpage on this
-  # Try to delete a sheet in the Google Sheets spreadsheet
-  #try(googlesheets4::sheet_delete(dic_map, paste0("Vars_",dt)))
-
-  # Write 'dic' to the Google Sheets spreadsheet
-  #googlesheets4::sheet_write(dic, ss = dic_map, sheet = paste0("Vars_",dt))
 }

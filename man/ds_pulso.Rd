@@ -3,7 +3,7 @@
 \title{Pulso Social Project Main Data
 }
 \description{
-Esta base de datos representa la infrasturecoge información procedente de distintas fuentes, previamente preprocesada, actualizada y normalizada. Se convierte en la principal fuente de información del proyecto Pulso Social, y contiene toda la información necesaria para su posterior análisis.
+Esta base de datos representa la infrastura de datos de Pulso Social. La información procedente de distintas fuentes, previamente preprocesada, actualizada y normalizada. Se convierte en la principal fuente de información del proyecto Pulso Social, y contiene toda la información necesaria para su posterior análisis.
 }
 \usage{
 ds_pulso
