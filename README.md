@@ -1,5 +1,7 @@
 # Pulso Social Colombia
 
+![alt text](man/figures/logo_pulso.png)
+
 El objetivo de este paquete es poner a disposición los indicadores sociales que ponen la aplicación para Colombia de la metodología \emph{Pulso Social } propuesta por el Banco Interamericano de Desarrollo (BID) [(Duryea2016Pulso2016)](https://publications.iadb.org/es/pulso-social-en-america-latina-y-el-caribe-2017-legado-familiar-rompemos-el-molde-o-repetimos). Bajo este enfoque, se entiende que la política social debe estar centrada en las personas durante los diferentes ciclos de vida (niñez, infancia, juventud, adultez y vejez), con el fin de identificar brechas y cuellos de botella en la formación del capital humano. 
 
 Para esto, se realiza una revisión sistemática de diferentes indicadores sociales los cuales son agrupados en dos categorías: contexto y resultados. Los primeros, hacen referencia a las condiciones generales del hogar, las cuales son esenciales para entender el contexto en que se elabora las políticas sociales. Por su parte, los indicadores de resultados describen las situaciones sociales en áreas específicas a lo largo del ciclo de vida de los individuos y reflejan el contexto.
