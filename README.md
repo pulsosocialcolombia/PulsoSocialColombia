@@ -29,7 +29,7 @@ El paquete depende de los siguientes paquetes de R:
 
 Tras la instalación del paquete estarán disponibles las siguientes funciones: 
 
-- **pulso_diccionario
+- **pulso_diccionario**: Crea el diccionario de datos de Pulso Social Colombia
 - **pulso_trend**: Crea gráficos de tendencias temporales 
 - **pulso_map_change** Crear mapa con la información geográfica con los datos disponibles 
 - **pulso_map** Crear mapa con la información geográfica con los datos disponibles  
