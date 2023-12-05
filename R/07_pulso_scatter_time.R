@@ -27,7 +27,7 @@ pulso_scatter_time <- function(id, type_p, year_min, year_max, col_palette){
   options(scipen = 999) # Set scientific notation off
 
   # Load the final data base
-  ds_pulso <- PulsoSocialColombia::ds_pulso # PulsoSocialColombia package
+  ds_pulso <- ds_pulso # PulsoSocialColombia package
 
   # Set font sizes
   caption_text <- 6*1.5

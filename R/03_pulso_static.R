@@ -20,8 +20,10 @@ pulso_static <- function(id,type_p,year){
   require(stringi, quietly = TRUE)
   require(tidyverse, quietly = TRUE)
   #Call final data base
-  load("data/ds_pulso.rda")# Load data from PulsoSocialColombia package
-  load("data/deflactor.rda")
+  ds_pulso <- ds_pulso
+  deflactor <- deflactor
+  #load("data/ds_pulso.rda")# Load data from PulsoSocialColombia package
+  #load("data/deflactor.rda")
   # Font sizes
   caption_text <- 6*1.5
   sub_text <- 6*1.5

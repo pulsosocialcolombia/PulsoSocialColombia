@@ -34,7 +34,8 @@ pulso_map <- function(id, type_p, num_percentil =  5, col_palette){
 
   #### Choose variable
   # Call final data base
-  load("data/ds_pulso.rda")# Load data from PulsoSocialColombia package
+  ds_pulso <- ds_pulso
+  #load("data/ds_pulso.rda")# Load data from PulsoSocialColombia package
 
   df <- ds_pulso[ds_pulso$var_id == id,]
 

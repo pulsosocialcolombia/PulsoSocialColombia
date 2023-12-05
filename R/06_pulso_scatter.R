@@ -22,7 +22,8 @@ pulso_scatter <- function(id, type_p, year, col_palette){
   require(dplyr, quietly = TRUE)
   options(scipen = 999)
   # Load the final data base
-  load("data/ds_pulso.rda")# Load data from PulsoSocialColombia package
+  ds_pulso <- ds_pulso
+  #load("data/ds_pulso.rda")# Load data from PulsoSocialColombia package
 
 
   # Set font sizes

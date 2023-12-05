@@ -24,7 +24,8 @@ pulso_trend <- function(id,type_p){
   options(scipen = 999) # Set scientific notation off
 
   #Call final data base
-  load("data/ds_pulso.rda")# Load data from PulsoSocialColombia package
+  ds_pulso <- ds_pulso
+  #load("data/ds_pulso.rda")# Load data from PulsoSocialColombia package
 
   # Font sizes
   caption_text <- 6*1.5

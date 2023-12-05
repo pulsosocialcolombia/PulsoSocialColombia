@@ -30,7 +30,8 @@ pulso_map_change <- function(id, type_p, num_percentil = 5, col_palette){
   options(scipen = 999)  # set scientific notation penalty to 999
 
   # Load the final data base from PulsoSocialColombia package
-  load("data/ds_pulso.rda")# Load data from PulsoSocialColombia package
+  ds_pulso <- ds_pulso
+  #load("data/ds_pulso.rda")# Load data from PulsoSocialColombia package
 
   # Set font sizes for different elements
   caption_text <- 6*1.5

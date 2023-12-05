@@ -10,9 +10,10 @@
 #               - Laura Quintero (lmquinterv@eafit.edu.co)
 # Summary: This script prepares a dictionary of variables for analysis.
 
-load("data/cod_vars.rda")
-
 pulso_diccionario <- function(){
+
+  #load("data/cod_vars.rda")
+  cod_vars <- cod_vars
 
   # Load the necessary libraries
   require (tidyverse, quietly = TRUE)
