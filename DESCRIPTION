@@ -1,12 +1,12 @@
 Package: PulsoSocialColombia
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Pulso Social Colombia - EAFIT/BID
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Valor Público - Universidad EAFIT
+Maintainer: Juan Carlos Muñoz-Mora <jmunozm1@eafit.edu.co>
+Description: Este paquete pone a disposición la infraestructura de datos del proyecto
+    Pulso Social Colombia.
+License: MIT
 Encoding: UTF-8
 LazyData: true
 Depends: 
