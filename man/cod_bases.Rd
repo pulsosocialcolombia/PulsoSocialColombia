@@ -1,42 +1,40 @@
 \name{cod_bases}
 \alias{cod_bases}
-\title{Dictionary of Pulso Social Datasets
+\title{Diccionario de Bases de datos Pulso Social
 }
 \description{
-A dataset containing information about multiple Pulso Social Project databases.
-}
+Un conjunto de datos que contiene información sobre múltiples bases de datos de Social Pulso.}
 \usage{
 cod_bases
 }
 \details{
-   \bold{id_data:} {A unique identifier for each database. This is a numeric field.}
+   \bold{id_data:} {Un identificador único para cada base de datos. Se trata de un campo numérico.}
 
-   \bold{db_nombre:} {The name of the database. This is a character field.}
+   \bold{db_nombre:} {Nombre de la base de datos. Se trata de un campo de caracteres.}
 
-   \bold{db_descripcion:} {A description of the database. This is a character field.}
+   \bold{db_descripcion:} {Descripción de la base de datos. Se trata de un campo de caracteres.}
 
-   \bold{db_descarga:} {A download link for the database. This is a character field.}
+   \bold{db_descarga:} {Enlace de descarga de la base de datos. Se trata de un campo de caracteres.}
 
-   \bold{Actualizacion:} {The date of the last update of the database. This is a Date field.}
+   \bold{Actualizacion:} {Fecha de la última actualización de la base de datos. Se trata de un campo Fecha.}
 
-   \bold{db_fuente:} {The source of the database. This is a character field.}
+   \bold{db_fuente:} {La fuente de la base de datos. Se trata de un campo de caracteres.}
 
-   \bold{db_link:} {A link to the database. This is a character field.}
+   \bold{db_link:} {Un enlace a la base de datos. Se trata de un campo de caracteres.}
 
-   \bold{db_nivel:} {The level of the database. This is a character field.}
+   \bold{db_nivel:} {El nivel de la base de datos. Se trata de un campo de caracteres.}
 
-   \bold{db_territorial:} {The territorial scope of the database. This is a character field.}
+   \bold{db_territorial:} {Ámbito territorial de la base de datos. Se trata de un campo de caracteres.}
 
-   \bold{db_poblacional:} {The population scope of the database. This is a character field.}
+   \bold{db_poblacional:} {El ámbito de población de la base de datos. Se trata de un campo de caracteres.}
 
-   \bold{db_poblacional2:} {Additional population scope of the database. This is a character field.}
+   \bold{db_poblacional2:} {Ámbito de población adicional de la base de datos. Se trata de un campo de caracteres.}
 
-   \bold{db_periocidad:} {The frequency of database updates. This is a character field.}
+   \bold{db_periocidad:} {Frecuencia de actualización de la base de datos. Se trata de un campo de caracteres.}
 
-   \bold{db_disponibilidad:} {The availability of the database. This is a character field.}
+   \bold{db_disponibilidad:} {La disponibilidad de la base de datos. Se trata de un campo de caracteres.}
 
-   \bold{db_disponibilidad2:} {Additional availability information of the database. This is a character field.}
-
+   \bold{db_disponibilidad2:} {Información adicional sobre la disponibilidad de la base de datos. Se trata de un campo de caracteres.}
 
 }
 \author{

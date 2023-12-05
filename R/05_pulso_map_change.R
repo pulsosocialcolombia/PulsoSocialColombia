@@ -1,10 +1,10 @@
 # File: 05_pulso_map_change.R
-# Created: Nov 2021 
+# Created: Nov 2021
 #         - Mónica Hernandez (mhernande6@eafit.edu.co)
-#         - Ana M Pirela
+#         - Ana M Pirela (ampirelar@eafit.edu.co)
 #         - Juan Carlos Muñoz-Mora (jmunozm1@eafit.edu.co)
 # Last Updated: Nov 2023
-#               - German Tabares (gangulo1@eafit.edu.co)
+#               - German Angulo (gangulo1@eafit.edu.co)
 #               - Juan Carlos Muñoz (jmunozm1@eafit.edu.co)
 #               - Santiago Navas (snavasg@eafit.edu.co)
 #               - Laura Quintero (lmquinterv@eafit.edu.co)
@@ -12,7 +12,7 @@
 # y ultimo años disponible
 
 
-pulso_map_change <- function(id, type_p, col_palette){
+pulso_map_change <- function(id, type_p, num_percentil = 5, col_palette){
 
   # Load necessary packages
   require(sf, quietly = TRUE)  # sf package for spatial data
@@ -30,7 +30,7 @@ pulso_map_change <- function(id, type_p, col_palette){
   options(scipen = 999)  # set scientific notation penalty to 999
 
   # Load the final data base from PulsoSocialColombia package
-  ds_pulso <- PulsoSocialColombia::ds_pulso
+  load("data/ds_pulso.rda")# Load data from PulsoSocialColombia package
 
   # Set font sizes for different elements
   caption_text <- 6*1.5
@@ -50,17 +50,27 @@ pulso_map_change <- function(id, type_p, col_palette){
   # Set value to NA for rows where value equals 0, time equals 2020, id_data equals 1, and variable is in geih$variable
   df$value[df$value == 0 & df$time == 2020 & df$id_data == 1 & df$variable %in% geih$variable] <- NA
 
+
+  # Check Percentile
+  if (missing(num_percentil)) {
+    num_percentil <- 5  # Establecer el valor predeterminado si no se proporciona
+  }
+  if (num_percentil<1 || num_percentil>5) {
+    print(glue::glue("El número de percentiles debe estar entre 1 y 5"))
+  } else {
+
   # Check if the data is at the departmental level
   if(stringr::str_detect("dpto", unique(df$id_nivel), negate = T)){
     print("No se recomienda esta funcion: Datos no estan a nivel departamental")
-  } else {
-
+    } else {
+if(length(unique(df$time))==1){
+  print("Solo Hay un Año, por lo tanto es imposible comparar")
+} else {
     # If type_p is missing, set it to an empty string
     if(missing(type_p)) {
       type_p=""
     }
-
-    # If col_palette is missing, use default colors
+   # If col_palette is missing, use default colors
     if(missing(col_palette)){
       col_palette <- c("#FAECEC", "#D7C6CC", "#B0A3AF", "#878293", "#5B6477", "#2F4858")
     }
@@ -220,13 +230,18 @@ pulso_map_change <- function(id, type_p, col_palette){
     ### -------------
 
     # Split data in percentiles
-    classes <- 5
-    q1 <- stats::quantile(df$value, na.rm=T, probs = seq(0, 1, length.out = classes + 1))
+    #classes <- 5
+    q1 <- stats::quantile(df$value, na.rm=T, probs = seq(0, 1, length.out = num_percentil + 1))
+    # Check if quantiles are unique
+    if(length(q1) != length(unique(q1))) {
+      print("No hay suficiente variacion en los datos, por favor disminuya el numero de percentiles")
+    } else {
+
     df$q_value <- base::cut(df$value, breaks = q1, include.lowest = T, dig.lab = 3)
     base::table(df$q_value)
 
     # Keep labels only for polygons with data
-    df$nvl_label[is.na(df$value)] <- NA
+    df$nvl_label[is.na(df$value)] <- "NA"
 
     ### --------------
     # Map
@@ -252,4 +267,7 @@ pulso_map_change <- function(id, type_p, col_palette){
 
   }
 
+}
+}
+}
 }

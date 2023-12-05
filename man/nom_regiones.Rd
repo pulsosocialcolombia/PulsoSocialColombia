@@ -1,9 +1,9 @@
 \name{nom_regiones}
 \alias{nom_regiones}
-\title{Colombia Regions Name Data
+\title{Nombres Regiones en Colombia
 }
 \description{
-This Dataset reads a file containing data on the names of Colombian Regions, with convention names used in the rest of the Pulso Social project.
+Este conjunto de datos lee un archivo que contiene datos sobre los nombres de las regiones colombianas, con los nombres de convención utilizados en el resto del proyecto Pulso Social.
 
 }
 \usage{

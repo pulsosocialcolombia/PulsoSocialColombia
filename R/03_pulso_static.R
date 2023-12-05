@@ -1,10 +1,10 @@
 # File: 03_pulso_static.R
-# Created: Nov 2021 
+# Created: Nov 2021
 #         - Mónica Hernandez (mhernande6@eafit.edu.co)
-#         - Ana M Pirela
+#         - Ana M Pirela (ampirelar@eafit.edu.co)
 #         - Juan Carlos Muñoz-Mora (jmunozm1@eafit.edu.co)
 # Last Updated: Nov 2023
-#               - German Tabares (gangulo1@eafit.edu.co)
+#               - German Angulo (gangulo1@eafit.edu.co)
 #               - Juan Carlos Muñoz (jmunozm1@eafit.edu.co)
 #               - Santiago Navas (snavasg@eafit.edu.co)
 #               - Laura Quintero (lmquinterv@eafit.edu.co)
@@ -20,8 +20,8 @@ pulso_static <- function(id,type_p,year){
   require(stringi, quietly = TRUE)
   require(tidyverse, quietly = TRUE)
   #Call final data base
-  ds_pulso<-PulsoSocialColombia::ds_pulso
-
+  load("data/ds_pulso.rda")# Load data from PulsoSocialColombia package
+  load("data/deflactor.rda")
   # Font sizes
   caption_text <- 6*1.5
   sub_text <- 6*1.5
@@ -30,6 +30,7 @@ pulso_static <- function(id,type_p,year){
 
   #### Choose variable
   df <- ds_pulso[ds_pulso$var_id==id,]
+  # Check territorial division
 
   ## If missing
   if(missing(type_p)) {
@@ -70,6 +71,14 @@ pulso_static <- function(id,type_p,year){
 
   ### Filter only this year
   df <- df[df$time==year,]
+
+  ### Comprobar que no tenga NA para ese año
+  #if (any(is.na(df$value))) {
+   # print("No se encuentran valores para ese año, intente con otro.")
+    # Retorna un valor específico (puedes cambiar esto según tus necesidades)
+    # O simplemente puedes finalizar la función
+    # return
+  #}else{
 
   ### Level
   level <- unique(df$id_nivel)
@@ -225,7 +234,13 @@ pulso_static <- function(id,type_p,year){
   ### -------------
 
   # Print the progress of the plot generation
-  print(glue::glue("Plotting {ylab} - Trend analysis"))
+  print(glue::glue("Plotting {ylab} - Static analysis"))
+
+  if (any(df$value[!is.na(df$value)] < 0)) {
+    print("La variable tiene datos negativos por lo que no es posible usar esta función")
+    # Aquí puedes retornar lo que necesites o simplemente finalizar la función
+  return(NULL)
+    }#else{
 
   ### --------------
   # Chart Type - Circular
@@ -253,39 +268,39 @@ pulso_static <- function(id,type_p,year){
 
     # Set the y-axis limits and adjust the value based on the unit of the variable
     if(stringr::str_detect(unique(df$var_unidad), "(%)")){
-      ylimits <- ylim(-100, 120)
+      ylimits <-ggplot2::ylim(-100, 120)
     }
     if(stringr::str_detect(unique(df$var_unidad), "Coeficiente")){
       data$value <- data$value*100
-      ylimits <- ylim(-100, 120)
+      ylimits <-ggplot2::ylim(-100, 120)
     }
     if(stringr::str_detect(unique(df$var_unidad), "Millones de pesos")){
-      ylimits <- ylim(min(data$value)*(-100), max(data$value)*130)
+      ylimits <-ggplot2::ylim(min(data$value)*(-100), max(data$value)*130)
       data$value <- data$value*100
     }
     if(stringr::str_detect(unique(df$var_unidad), "Personas")){
       data$value <- data$value*1.3
-      ylimits <- ylim(-100, 120)
+      ylimits <-ggplot2::ylim(-100, 120)
     }
 
     if((stringr::str_detect(unique(df$var_unidad), "Unidades")) &
        max(df$value) > 1000){
-      ylimits <- ylim(-100, 120)
+      ylimits <-ggplot2::ylim(-100, 120)
       data$value <- data$value/100
     }
 
     if(stringr::str_detect(unique(df$var_unidad), "Personas") & max(df$value) > 100){
-      ylimits <- ylim(-100, 120)
+      ylimits <-ggplot2::ylim(-100, 120)
       data$value <- data$value/5
     }
 
     if(stringr::str_detect(unique(df$var_unidad), "Nacimientos") & stringr::str_detect(unique(df$subdimension), "Fecundidad")){
-      ylimits <- ylim(-100, 130)
+      ylimits <-ggplot2::ylim(-100, 130)
     }
     if(stringr::str_detect(unique(df$var_unidad), "Muertes por cada")){
-      ylimits <- ylim(-100, 180)
+      ylimits <-ggplot2::ylim(-100, 180)
     }
-  }
+
 
   # Define a vector of different units
   others <- c("(%)", "Coeficiente", "Millones de pesos", "Personas", "Nacimientos", "Muertes por cada")
@@ -293,7 +308,7 @@ pulso_static <- function(id,type_p,year){
   # If the unit of the variable is not in the defined vector, adjust the value and set the y-axis limits
   if(stringr::str_detect(unique(df$var_unidad), paste(others, collapse = "|"), negate = T)){
     data$value <- data$value*1.3
-    ylimits <- ylim(-100, 120)
+    ylimits <-ggplot2::ylim(-100, 120)
   }
 
   # Create a circular barplot with the adjusted data
@@ -322,7 +337,7 @@ pulso_static <- function(id,type_p,year){
     ggplot2::labs(title = tl,
                   caption=cap)
 
-
+}
 #### --- Levels
 ## Circular barplot
 if (levels==1) {
@@ -345,31 +360,31 @@ if (levels==1) {
 
   # Set the y-axis limits and adjust the value based on the unit of the variable
   if(stringr::str_detect(unique(df$var_unidad), "(%)")){
-    ylimits <- ylim(-100, 120)
+    ylimits <- ggplot2::ylim(-100, 120)
   }
   if(stringr::str_detect(unique(df$var_unidad), "Coeficiente")){
     data$value <- data$value*100
-    ylimits <- ylim(-100, 120)
+    ylimits <-ggplot2::ylim(-100, 120)
   }
   if(stringr::str_detect(unique(df$var_unidad), "Millones de pesos")){
-    ylimits <- ylim(min(data$value)*(-100), max(data$value)*130)
+    ylimits <-ggplot2::ylim(min(data$value)*(-100), max(data$value)*130)
     data$value <- data$value*100
   }
   if(stringr::str_detect(unique(df$var_unidad), "Personas")){
     data$value <- data$value*1.3
-    ylimits <- ylim(-100, 120)
+    ylimits <-ggplot2::ylim(-100, 120)
   }
   if(stringr::str_detect(unique(df$var_unidad), "Nacimientos") & stringr::str_detect(unique(df$subdimension), "Fecundidad")){
-    ylimits <- ylim(-100, 130)
+    ylimits <-ggplot2::ylim(-100, 130)
   }
   if(stringr::str_detect(unique(df$var_unidad), "Muertes por cada")){
-    ylimits <- ylim(-100, 180)
+    ylimits <-ggplot2::ylim(-100, 180)
   }
 
   others <- c("(%)", "Coeficiente", "Millones de pesos", "Personas", "Nacimientos", "Muertes por cada")
   if(stringr::str_detect(unique(df$var_unidad), paste(others, collapse = "|"), negate = T)){
     data$value <- data$value*1.3
-    ylimits <- ylim(-100, 120)
+    ylimits <-ggplot2::ylim(-100, 120)
   }
 
   # Create a circular barplot with the adjusted data
@@ -400,9 +415,14 @@ if (levels==1) {
     ggplot2::facet_wrap(~ ct_label)
 }
 
+
+
 # Plot the graph
 print(graph)
+
+
 return(graph)
+
 }
 
 

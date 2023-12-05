@@ -1,10 +1,10 @@
 # File: 06_pulso_scatter.R
-# Created: Nov 2021 
+# Created: Nov 2021
 #         - Mónica Hernandez (mhernande6@eafit.edu.co)
-#         - Ana M Pirela
+#         - Ana M Pirela (ampirelar@eafit.edu.co)
 #         - Juan Carlos Muñoz-Mora (jmunozm1@eafit.edu.co)
 # Last Updated: Nov 2023
-#               - German Tabares (gangulo1@eafit.edu.co)
+#               - German Angulo (gangulo1@eafit.edu.co)
 #               - Juan Carlos Muñoz (jmunozm1@eafit.edu.co)
 #               - Santiago Navas (snavasg@eafit.edu.co)
 #               - Laura Quintero (lmquinterv@eafit.edu.co)
@@ -59,13 +59,25 @@ pulso_scatter_time <- function(id, type_p, year_min, year_max, col_palette){
   df$value[df$value == 0 & df$time == 2020 & df$id_data == 1 & df$variable %in% geih$variable] <- NA
 
   # Check the territorial division
-  niveles <- c("etnia", "gen", "edad", "grupo", "tipo")
+  niveles <- c("etnia", "gen", "edad", "grupo", "tipo","extr", "causa")
   niv <- gsub(".*_", "", unique(df$id_nivel))
 
+  # Numero de años disponibles
+  unique_years <- n_distinct(df$time)
+
+  if (unique_years == 1 ) {
+    print("No se recomienda esta funcion: Solo hay un año disponible")
+  } else {
+
+  if ("2071-2100" %in% df$time) {
+    print("No se recomienda esta funcion: Solo hay un año disponible")
+  } else {
   # If the data is at a level that is not recommended for this function, print a warning
   if(stringr::str_detect(niv, paste(niveles, collapse = "|"), negate = FALSE)){
     print("No se recomienda esta funcion: Datos estan en niveles")
-  } else {
+    }else{
+
+
 
     # If type_p is missing, set it to an empty string
     if(missing(type_p)) {
@@ -270,5 +282,7 @@ pulso_scatter_time <- function(id, type_p, year_min, year_max, col_palette){
     # Plot
     graphics::plot(graph)
     return(graph)
-  }
+}
+}
+}
 }

@@ -1,14 +1,14 @@
 # File: 01_pulso_dic.R
-# Created: Nov 2021 
+# Created: Nov 2021
 #         - Mónica Hernandez (mhernande6@eafit.edu.co)
-#         - Ana M Pirela
+#         - Ana M Pirela (ampirelar@eafit.edu.co)
 #         - Juan Carlos Muñoz-Mora (jmunozm1@eafit.edu.co)
 # Last Updated: Nov 2023
-#               - German Tabares (gangulo1@eafit.edu.co)
+#               - German Angulo (gangulo1@eafit.edu.co)
 #               - Juan Carlos Muñoz (jmunozm1@eafit.edu.co)
 #               - Santiago Navas (snavasg@eafit.edu.co)
 #               - Laura Quintero (lmquinterv@eafit.edu.co)
-# Summary: This script create trend graph 
+# Summary: This script create trend graph
 
 pulso_trend <- function(id,type_p){
 
@@ -24,7 +24,7 @@ pulso_trend <- function(id,type_p){
   options(scipen = 999) # Set scientific notation off
 
   #Call final data base
-  ds_pulso<-PulsoSocialColombia::ds_pulso # Load data from PulsoSocialColombia package
+  load("data/ds_pulso.rda")# Load data from PulsoSocialColombia package
 
   # Font sizes
   caption_text <- 6*1.5
@@ -52,9 +52,9 @@ pulso_trend <- function(id,type_p){
   }
 
   # COVID data is in months
-  if(stringr::str_detect(unique(df$value_label), "Covid")){
-    df <- df %>%  dplyr::mutate(time_m = gsub(".*_", "", time), time = gsub("_.*", "", time)) # If the data is COVID data, mutate the time variable
-  }
+  #if(stringr::str_detect(unique(df$value_label), "Covid")){
+   # df <- df %>%  dplyr::mutate(time_m = gsub(".*_", "", time), time = gsub("_.*", "", time)) # If the data is COVID data, mutate the time variable
+  #}
 
   # We dont have data for 2020 in GEIH income
   geih <- ds_pulso %>%

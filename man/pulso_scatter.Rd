@@ -2,7 +2,7 @@
 % Please edit documentation in R/06_pulso_scatter.R
 \name{pulso_scatter}
 \alias{pulso_scatter}
-\title{Análisis de dispersión por niveles}
+\title{Análisis de dispersión por año}
 \usage{
 pulso_scatter(id, type_p, year, col_palette)
 }
@@ -18,7 +18,7 @@ pulso_scatter(id, type_p, year, col_palette)
 
 }
 \value{
-    Objeto ggplot que muestra el gráfico de dispersión de un "id" con datos de Pulso Social - Colombia. 
+    Objeto ggplot que muestra el gráfico de dispersión de un "id" con datos de Pulso Social - Colombia.
 }
 \description{
     Esta función genera un gráfico de dispersión por niveles gráfico de dispersión que muestra la relación entre dos categorías de una variable específica en los datos de Pulso social para un año concreto.

@@ -1,9 +1,9 @@
 \name{nom_dptos}
 \alias{nom_dptos}
-\title{Colombia Departments Name Data
+\title{Nombres de deparamentos en Colombia
 }
 \description{
-This Dataset reads a file containing Colombian department name data, with convention names used in the rest of the Pulso Social project.
+Este conjunto de datos lee un archivo que contiene datos de nombres de departamentos colombianos, con nombres de convención utilizados en el resto del proyecto Pulso Social.
 }
 \usage{
 nom_dptos

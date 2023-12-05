@@ -2,7 +2,7 @@
 % Please edit documentation in R/07_pulso_scatter_time.R
 \name{pulso_scatter_time}
 \alias{pulso_scatter_time}
-\title{Time Series Scatter Analysis for Pulso Social}
+\title{Análisis de dispersión por niveles}
 \usage{
 pulso_scatter_time(id, type_p, year_min, year_max, col_palette)
 }
@@ -18,7 +18,7 @@ pulso_scatter_time(id, type_p, year_min, year_max, col_palette)
 \item{col_palette (optional)}{Permite la definición pre-determinada de los colores que se utilizarán para el mapa. El insumo debe definir \bold{5} colores. }
 }
 \value{
-    Objeto ggplot que muestra el gráfico la comparación de la representación geográfica de un "id" con datos de Pulso Social - Colombia. 
+    Objeto ggplot que muestra el gráfico la comparación de la representación geográfica de un "id" con datos de Pulso Social - Colombia.
 }
 \description{
     Esta función genera un gráfico de dispersión  por niveles (un nivel, un anio) entre dos años de una variable específica "id" en los datos de Pulso Social.

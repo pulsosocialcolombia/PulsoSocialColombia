@@ -1,9 +1,9 @@
 \name{map_dptos}
 \alias{map_dptos}
-\title{Colombia Departments Maps Data
+\title{Mapas de deparamentos de Colombia
 }
 \description{
-This Dataset reads a shapefile containing map data of Colombian departments, with convention names used in the rest of the Pulso Social project.
+Este Dataset lee un shapefile que contiene datos cartográficos de los departamentos colombianos, con los nombres de convención utilizados en el resto del proyecto Pulso Social.
 }
 \usage{
 map_dptos

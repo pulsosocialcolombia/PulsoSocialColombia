@@ -1,10 +1,10 @@
 # File: 06_pulso_scatter.R
-# Created: Nov 2021 
+# Created: Nov 2021
 #         - Mónica Hernandez (mhernande6@eafit.edu.co)
-#         - Ana M Pirela
+#         - Ana M Pirela (ampirelar@eafit.edu.co)
 #         - Juan Carlos Muñoz-Mora (jmunozm1@eafit.edu.co)
 # Last Updated: Nov 2023
-#               - German Tabares (gangulo1@eafit.edu.co)
+#               - German Angulo (gangulo1@eafit.edu.co)
 #               - Juan Carlos Muñoz (jmunozm1@eafit.edu.co)
 #               - Santiago Navas (snavasg@eafit.edu.co)
 #               - Laura Quintero (lmquinterv@eafit.edu.co)
@@ -22,7 +22,8 @@ pulso_scatter <- function(id, type_p, year, col_palette){
   require(dplyr, quietly = TRUE)
   options(scipen = 999)
   # Load the final data base
-  ds_pulso<-PulsoSocialColombia::ds_pulso
+  load("data/ds_pulso.rda")# Load data from PulsoSocialColombia package
+
 
   # Set font sizes
   caption_text <- 6*1.5
@@ -59,7 +60,7 @@ pulso_scatter <- function(id, type_p, year, col_palette){
 
   # If the level is not one of the specified levels, print a warning message
   if(stringr::str_detect(niv, paste(niveles, collapse = "|"), negate = TRUE)){
-    print("This function is not recommended: Data are not at levels")
+    print("Esta función no es recomendada: los datos no estan a niveles")
   } else {
     # If 'type_p' is missing, set it to an empty string
     if(missing(type_p)) {
@@ -76,7 +77,7 @@ pulso_scatter <- function(id, type_p, year, col_palette){
     if(missing(col_palette)){
       col_palette <- c("#759cd4", "#c43424", "#ecbc24", "#385676", "#d4742d","#6dad55", "#a4a4a4", "#643d94")
     }
-  }
+
 
   # Filter data for the specified year
   df <- df[df$time==year,]
@@ -135,7 +136,7 @@ pulso_scatter <- function(id, type_p, year, col_palette){
   }
 
   # Fix levels - Territory
-  if(unique(df$id_nivel) %in% c("dpto","dpto_etnia","dpto_gen","dpto_sector")) {
+  if(unique(df$id_nivel) %in% c("dpto","dpto_etnia","dpto_gen","dpto_sector","nacional_col_extr")) {
     df$nvl_value <- as.numeric(df$nvl_value)
     nom_dpto <- nom_dpto %>% dplyr::rename(nvl_value = nivel_value)
     df <- df %>%
@@ -251,5 +252,5 @@ pulso_scatter <- function(id, type_p, year, col_palette){
 
 }
 
-
+}
 

@@ -1,10 +1,10 @@
 \name{map_mpios}
 \alias{map_mpios}
-\title{Colombia Municipalities Maps Data
+\title{Mapas de Municipios de Colombia
 
 }
 \description{
-This Dataset reads a shapefile containing map data of Colombian Municipalities, with convention names used in the rest of the Pulso Social project.
+Este Dataset lee un shapefile que contiene datos de mapas de Municipios Colombianos, con nombres de convención usados en el resto del proyecto Pulso Social.
 }
 \usage{
 map_mpios

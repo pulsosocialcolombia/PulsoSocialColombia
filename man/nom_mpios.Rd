@@ -1,9 +1,9 @@
 \name{nom_mpios}
 \alias{nom_mpios}
-\title{Colombia Municipalities Name Data
+\title{Nombre de municipios en Colombia
 }
 \description{
-This Dataset reads a file containing data on the names of Colombian Municipalities, with convention names used in the rest of the Pulso Social project.
+Este Dataset lee un archivo que contiene datos sobre los nombres de los Municipios Colombianos, con nombres de convención utilizados en el resto del proyecto Pulso Social.
 
 }
 \usage{

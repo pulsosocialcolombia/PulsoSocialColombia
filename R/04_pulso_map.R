@@ -1,17 +1,17 @@
 # File: 04_pulso_map.R
-# Created: Nov 2021 
+# Created: Nov 2021
 #         - Mónica Hernandez (mhernande6@eafit.edu.co)
-#         - Ana M Pirela
+#         - Ana M Pirela (ampirelar@eafit.edu.co)
 #         - Juan Carlos Muñoz-Mora (jmunozm1@eafit.edu.co)
 # Last Updated: Nov 2023
-#               - German Tabares (gangulo1@eafit.edu.co)
+#               - German Angulo (gangulo1@eafit.edu.co)
 #               - Juan Carlos Muñoz (jmunozm1@eafit.edu.co)
 #               - Santiago Navas (snavasg@eafit.edu.co)
 #               - Laura Quintero (lmquinterv@eafit.edu.co)
 # Summary: This function generates a comparative map graph between the maximum and minimum years for a specific variable in the data of Pulso Social.
 
 
-pulso_map <- function(id, type_p, col_palette){
+pulso_map <- function(id, type_p, num_percentil =  5, col_palette){
 
   # Load necessary packages
   require(sf, quietly = TRUE)
@@ -23,7 +23,7 @@ pulso_map <- function(id, type_p, col_palette){
   require(dplyr, quietly = TRUE)
   require(glue, quietly = TRUE)
 
-  options(scipen = 999)
+    options(scipen = 999)
 
   # Font sizes
   caption_text <- 6*1.5
@@ -34,7 +34,7 @@ pulso_map <- function(id, type_p, col_palette){
 
   #### Choose variable
   # Call final data base
-  ds_pulso <- PulsoSocialColombia::ds_pulso
+  load("data/ds_pulso.rda")# Load data from PulsoSocialColombia package
 
   df <- ds_pulso[ds_pulso$var_id == id,]
 
@@ -47,19 +47,28 @@ pulso_map <- function(id, type_p, col_palette){
 
   l <- unique(df$id_nivel)
 
-  # Check territorial division
-  if(stringr::str_detect("dpto", unique(df$id_nivel), negate = TRUE)){
-    print(glue::glue("This function is not recommended: Data is not at departmental level - the level is: {l}"))
+  # Check Percentile
+  if (num_percentil<1 || num_percentil>5) {
+    print(glue::glue("El número de percentiles debe estar entre 1 y 5"))
   } else {
 
-    ## If missing
-    if(missing(type_p)) {
-      type_p=""
-    }
+  # Check territorial division
+    if(stringr::str_detect("dpto", unique(df$id_nivel), negate = TRUE)){
+     print(glue::glue("This function is not recommended: Data is not at departmental level - the level is: {l}"))
+    } else {
+
+      ## If missing
+      if(missing(type_p)) {
+        type_p=""
+      }
 
     ## If palette is missing, use default colors
     if(missing(col_palette)){
       col_palette <- c("#FAECEC", "#D7C6CC", "#B0A3AF", "#878293", "#5B6477", "#2F4858")
+    }
+
+    if(missing(num_percentil)) {
+      num_percentil <- 5
     }
 
     # Identify first and last year in data
@@ -153,9 +162,15 @@ pulso_map <- function(id, type_p, col_palette){
       # Rename 'nivel_value' to 'nvl_value' in 'map_dptos'
       map_dptos <- map_dptos %>% dplyr::rename(nvl_value = nivel_value)
 
-      # Join 'df' and 'map_dptos' on 'nvl_value', keeping only rows where 'time' is the minimum or maximum year
+      map_dptos2 <- map_dptos %>% dplyr::mutate(time = max_year)
+      map_dptos3 <- map_dptos %>% dplyr::mutate(time = min_year)
+
+      map_dptos <- rbind(map_dptos3, map_dptos2)
+
+
+    # Join 'df' and 'map_dptos' on 'nvl_value', keeping only rows where 'time' is the minimum or maximum year
       df <- map_dptos %>%
-        dplyr::left_join(df %>% subset(time == min_year | time == max_year), by = "nvl_value") %>%
+        dplyr::left_join(df %>% subset(time == min_year | time == max_year), by = c("nvl_value" , "time")) %>%
         dplyr::select(-c(id_nivel.y)) %>%
         dplyr::rename(id_nivel = id_nivel.x)
     }
@@ -213,29 +228,39 @@ pulso_map <- function(id, type_p, col_palette){
 
     # Percentiles
     # Split data into percentiles
-    classes <- 5
-    q1 <- stats::quantile(df$value, na.rm = TRUE, probs = seq(0, 1, length.out = classes + 1))
+    #classes <- 5
+    q1 <- stats::quantile(df$value, na.rm = TRUE, probs = seq(0, 1, length.out = num_percentil + 1))
+    # Check if quantiles are unique
+    if(length(q1) != length(unique(q1))) {
+      print("No hay suficiente variacion en los datos, por favor disminuya el numero de percentiles")
+    } else {
+
     df$q_value <- cut(df$value, breaks = q1, include.lowest = TRUE, dig.lab = 2)
+    df<- df[order(df$value), ]
+
     table(df$q_value)
 
+
     # Keep labels only for polygons with data
-    df$nvl_label[is.na(df$value)] <- NA
+    df$nvl_label[is.na(df$value)] <- "NA"
 
     # Map
     # Plot polygons with no data
     poly_na <- df %>% dplyr::filter(is.na(value))
 
     if(nrow(poly_na) != 0){
-      poly_na <- poly_na %>% dplyr::distinct(nvl_value, .keep_all = TRUE)
+     poly_na <- poly_na %>% dplyr::distinct(nvl_value, .keep_all = TRUE)
       poly_min <- poly_na
       poly_min$time <- min_year
-      poly_max <- poly_na
+     poly_max <- poly_na
       poly_max$time <- max_year
       poly_na <- dplyr::bind_rows(poly_min, poly_max)
       data <- df %>% tidyr::drop_na(value) %>% dplyr::bind_rows(., poly_na)
     } else {
       data <- df
     }
+
+
 
     # Drop San Andres
     data <- data[data$nvl_value != 88,]
@@ -245,16 +270,19 @@ pulso_map <- function(id, type_p, col_palette){
     # map_cont3 <- c("#FAECEC", "#D7C6CC", "#B0A3AF", "#878293", "#5B6477", "#2F4858")
     # Map: first and last year
 
-    graph <- ggplot2::ggplot(data = data) +
-      ggplot2::geom_sf(aes(fill = q_value), color = "#2b2b2b", size = 0.1, alpha = 0.7) +
-      ggplot2::geom_text(aes(X, Y, label = nvl_label), vjust = 1.5, color = "black",
+
+
+  graph <- ggplot2::ggplot(data = data) +
+  ggplot2::geom_sf(aes(fill = q_value), color = "#2b2b2b", size = 0.1, alpha = 0.7) +
+   ggplot2::geom_text(aes(X, Y, label = nvl_label), vjust = 1.5, color = "black",
                          position = ggplot2::position_dodge(0.9), size = map_text) +
       ggplot2::scale_fill_manual(values =  rep(col_palette, 40), na.value = "#ededed", na.translate = FALSE) +
       ggplot2::guides(fill = ggplot2::guide_legend(ncol = 6)) +
-      ggplot2::xlab("") +
-      ggplot2::labs(title = tl, caption = cap) +
+     ggplot2::xlab("") +
+     ggplot2::labs(title = tl, caption = cap) +
       theme_Publication() +
-      ggplot2::facet_grid(~time)
+     ggplot2::facet_grid(~time)
+
 
     # Plot
     graphics::plot(graph)
@@ -262,4 +290,6 @@ pulso_map <- function(id, type_p, col_palette){
 
   }
 
+}
+}
 }

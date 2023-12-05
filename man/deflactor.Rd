@@ -3,7 +3,7 @@
 \title{Colombia PIB Deflactor Data
 }
 \description{
-This Dataset reads a file containing Colombia PIB deflactor, between 1960 and 2022.
+Este conjunto de datos lee un archivo que contiene el deflactor PIB de Colombia, entre 1960 y 2022.
 
 }
 \usage{

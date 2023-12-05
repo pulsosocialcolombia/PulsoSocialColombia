@@ -1,6 +1,6 @@
 \name{ds_pulso}
 \alias{ds_pulso}
-\title{Pulso Social Project Main Data
+\title{Datos principales del proyecto Pulso Social
 }
 \description{
 Esta base de datos representa la infrastura de datos de Pulso Social. La información procedente de distintas fuentes, previamente preprocesada, actualizada y normalizada. Se convierte en la principal fuente de información del proyecto Pulso Social, y contiene toda la información necesaria para su posterior análisis.
@@ -12,33 +12,34 @@ ds_pulso
 
 La base de datos contiene la siguientes columnas:
 
- \bold{id_data}: This is the unique identifier for each data point in the dataset.
+ \bold{id_data}: Este es el identificador único para cada punto de datos en el conjunto de datos.
 
- \bold{variable}: This column represents the variable name associated with each data point.
+ \bold{variable}: Esta columna representa el nombre de la variable asociada a cada punto de datos.
 
- \bold{id_nivel}: This column represents the level identifier, which could be "ciudad", "area_metropolitana", etc.
+ \bold{id_nivel}: Esta columna representa el identificador de nivel, que puede ser "ciudad", "área_metropolitana", etc.
 
- \bold{id_time}: This column represents the time identifier for each data point.
+ \bold{id_time}: Esta columna representa el identificador temporal de cada punto de datos.
 
- \bold{time}: This column represents the actual time value associated with each data point.
+ \bold{tiempo}: Esta columna representa el valor de tiempo real asociado a cada punto de datos.
 
- \bold{nvl_type}: This column represents the type of level (e.g., "ciudad", "area_metropolitana", etc.) associated with each data point.
+ \bold{nvl_tipo}: Esta columna representa el tipo de nivel (por ejemplo, "ciudad", "área_metropolitana", etc.) asociado a cada punto de datos.
 
- \bold{nvl_value}: This column represents the value associated with the level type for each data point.
+ \bold{nvl_valor}: Esta columna representa el valor asociado al tipo de nivel para cada punto de datos.
 
- \bold{nvl_label}: This column represents the label associated with the level type for each data point.
+ \bold{nvl_label}: Esta columna representa la etiqueta asociada al tipo de nivel para cada punto de datos.
 
- \bold{ct_type}: This column represents the type of category (e.g., "ninguno", etc.) associated with each data point.
+ \bold{tipo_ct}: Esta columna representa el tipo de categoría (por ejemplo, "ninguno", etc.) asociado a cada punto de datos.
 
- \bold{ct_value}: This column represents the value associated with the category type for each data point.
+ \bold{valor_ct}: Esta columna representa el valor asociado al tipo de categoría para cada punto de datos.
 
- \bold{ct_label}: This column represents the label associated with the category type for each data point.
+ \bold{ct_label}: Esta columna representa la etiqueta asociada al tipo de categoría para cada punto de datos.
 
- \bold{value_label}: This column represents the label associated with the value for each data point.
+ \bold{etiqueta_valor}: Esta columna representa la etiqueta asociada al valor de cada punto de datos.
 
- \bold{value}: This column represents the actual value for each data point.
+ \bold{valor}: Esta columna representa el valor real de cada punto de datos.
 
- \bold{var_id}: This column represents the variable identifier for each data point. It's created by joining `ds_pulso` with a data dictionary and assigning new IDs for new variables.
+ \bold{id_variable}: Esta columna representa el identificador de la variable para cada punto de datos. Se crea uniendo `ds_pulso` con un diccionario de datos y asignando nuevos ID a los nuevos puntos de datos.
+
 }
 
 \author{
